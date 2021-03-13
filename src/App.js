@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import Protsenko from './containers/Protsenko'
+import Lobanov from './containers/Lobanov'
 
 function App() {
   return (
@@ -19,9 +19,9 @@ function App() {
           Learn React
         </a>
       </header>*/}
-      <Protsenko>
+      <Lobanov>
         
-      </Protsenko>
+      </Lobanov>
     </div>
   );
 }
