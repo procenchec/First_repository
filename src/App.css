@@ -16,7 +16,7 @@
 
 .App-header {
   background-color: #282c34;
-  background-image: url('https://i.gifer.com/3klW.mp4');
+  background-image: url('https://img1.freepng.ru/20180306/uiq/kisspng-light-flame-cartoon-cartoon-flame-vector-elements-5a9ef610c9e0c7.3107897715203671208269.jpg');
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -40,10 +40,25 @@
 }
 
 .Procenko {
+    background-color: rgb(77, 93, 182);
+    text-align: center;
+    color: rgb(206, 168, 65);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+
+.Turov {
   
-  background-color: rgb(77, 93, 182);
+  background: linear-gradient(45deg, #c0fafa, #fdb9ce);
   text-align: center;
-  color: rgb(206, 168, 65);
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  color: rgb(255, 102, 0);
   min-height: 100vh;
   display: flex;
   justify-content: center;
