@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import Artemyev from './containers/Artemyev'
+import Turov from './containers/Turov'
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
       <Artemyev>
         
       </Artemyev>
+      <Turov>
+        
+      </Turov>
     </div>
   );
 }
