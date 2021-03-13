@@ -100,3 +100,18 @@
     flex-direction: column;
     
   }
+
+
+  .Turov {
+    background: linear-gradient(45deg, #c0fafa, #fdb9ce);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    color: rgb(255, 102, 0);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
