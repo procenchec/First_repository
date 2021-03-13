@@ -9,12 +9,14 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+    /* animation: App-logo-spin infinite 20s linear; */
   }
 }
 
 .App-header {
   background-color: #282c34;
+  background-image: url('https://i.gifer.com/3klW.mp4');
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +37,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Procenko {
+  
+  background-color: rgb(77, 93, 182);
+  text-align: center;
+  color: rgb(206, 168, 65);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
 }
