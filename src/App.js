@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import Artemyev from './containers/Artemyev'
+import Rozhkova from './containers/Rozhkova'
 import Kamleva from './containers/Kamleva'
 import Turov from './containers/Turov'
 
@@ -21,9 +21,9 @@ function App() {
           Learn React
         </a>
       </header>*/}
-      <Artemyev>
+      <Rozhkova>
         
-      </Artemyev>
+      </Rozhkova>
       <Kamleva>
         
       </Kamleva>
