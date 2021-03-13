@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import Artemyev from './containers/Artemyev'
+import Kamleva from './containers/Kamleva'
 import Turov from './containers/Turov'
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
       <Artemyev>
         
       </Artemyev>
+      <Kamleva>
+        
+      </Kamleva>
       <Turov>
         
       </Turov>
