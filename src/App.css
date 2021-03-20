@@ -167,4 +167,13 @@
     flex-direction: column;
 }
 
-
+.Korneev {
+    background-color:rgb(255, 102, 0);
+    text-align: center;
+    color:rgb(77, 170, 182);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
