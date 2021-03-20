@@ -8,6 +8,7 @@ import Turov from './containers/Turov'
 import Mironov from './containers/Mironov'
 import List from './containers/Common/List'
 import Nikulin from "./containers/Nikulin";
+import Korneev from "./containers/Korneev"
 
 function App() {
   return (
@@ -42,6 +43,10 @@ function App() {
       <Turov>
         
       </Turov>
+
+      <Korneev>
+      </Korneev>
+
       <Mironov>
 
       </Mironov>
