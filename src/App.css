@@ -1,94 +1,29 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 .App-header {
-  background-color: #282c34;
-  background-image: url('https://i.gifer.com/3klW.mp4');
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    background-image: url('https://i.gifer.com/3klW.mp4');
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 .Procenko {
-  
-  background-color: rgb(77, 93, 182);
-  text-align: center;
-  color: rgb(206, 168, 65);
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  
-}
-
-.Sheglova {
-  background-color: rgb(77, 170, 182);
-  text-align: center;
-  color: red;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.Artemyev {
-  background-color: rgb(77, 93, 182);
-  text-align: center;
-  color: rgb(206, 168, 65);
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.Kamleva {
-  background-color: rgb(226, 243, 74);
-  text-align: center;
-  color: rgb(221, 44, 44);
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.Sheglova_p {
-  margin-top: 40px;
-}
-
-.Rozhkova {
-
-  background-color: rgba(126, 19, 226, 0.733);
-  text-align: center;
-  color: rgb(243, 239, 17);
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-weight: bold;
-
-}
-
-
-.Lobanov{
 
     background-color: rgb(77, 93, 182);
     text-align: center;
@@ -98,11 +33,76 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-  }
+
+}
+
+.Sheglova {
+    background-color: rgb(77, 170, 182);
+    text-align: center;
+    color: red;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Artemyev {
+    background-color: rgb(77, 93, 182);
+    text-align: center;
+    color: rgb(206, 168, 65);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Kamleva {
+    background-color: rgb(226, 243, 74);
+    text-align: center;
+    color: rgb(221, 44, 44);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Sheglova_p {
+    margin-top: 40px;
+}
+
+.Rozhkova {
+
+    background-color: rgba(126, 19, 226, 0.733);
+    text-align: center;
+    color: rgb(243, 239, 17);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+
+}
 
 
-  .Turov {
+.Lobanov {
+
+    background-color: rgb(77, 93, 182);
+    text-align: center;
+    color: rgb(206, 168, 65);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.Turov {
     background: linear-gradient(45deg, #c0fafa, #fdb9ce);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -114,4 +114,22 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
+}
+
+
+.Nikulin {
+
+    background: linear-gradient(45deg, #e0c7c7, #ff7f7f);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    color: rgb(255, 0, 0);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
