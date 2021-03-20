@@ -10,6 +10,7 @@ import Turov from './containers/Turov'
 import Mironov from './containers/Mironov'
 import List from './containers/Common/List'
 import Nikulin from "./containers/Nikulin";
+import Korneev from "./containers/Korneev";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
             <Kamleva />
           </Route>
           <Route path="/Проценко">
-            <Procenko/>
+            <Procenko />
           </Route>
           <Route path="/Артемьев">
             <Artemyev />
@@ -31,16 +32,18 @@ function App() {
             <Sheglova>
 
             </Sheglova>
-                    
+
             <Lobanov>
 
             </Lobanov>
             <Rozhkova>
             </Rozhkova>
-           
+
             <Turov>
 
             </Turov>
+            <Korneev>
+            </Korneev>
             <Mironov>
 
             </Mironov>
@@ -49,22 +52,6 @@ function App() {
             </Nikulin>
           </Route>
         </Switch>
-
-        {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>*/}
-
       </div>
     </BrowserRouter>
   );
