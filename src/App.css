@@ -75,9 +75,11 @@
 
 .Rozhkova {
 
-    background-color: rgba(126, 19, 226, 0.733);
+    background: linear-gradient(45deg, #d59bec, #36f5c5);
     text-align: center;
-    color: rgb(243, 239, 17);
+    color: rgb(23, 105, 67);
+    font-family: Bookman Old Style, Helvetica, sans-serif;
+    font-style: oblique;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -87,6 +89,13 @@
 
 }
 
+.rozhok {
+    text-align: center;
+    color: rgb(112, 49, 65);
+    font-family: Bookman Old Style, Helvetica, sans-serif;
+    font-style: oblique;
+
+}
 
 .Lobanov {
 
