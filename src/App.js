@@ -7,6 +7,7 @@ import Kamleva from './containers/Kamleva'
 import Turov from './containers/Turov'
 import Mironov from './containers/Mironov'
 import List from './containers/Common/List'
+import Nikulin from "./containers/Nikulin";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
         </a>
       </header>*/}
       <Sheglova>
-        
+
       </Sheglova>
       <Lobanov>
         
@@ -44,7 +45,11 @@ function App() {
       <Mironov>
 
       </Mironov>
+      <Nikulin>
+
+      </Nikulin>
     </div>
+
   );
 }
 
