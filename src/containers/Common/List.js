@@ -13,10 +13,14 @@ const columns = [
     { field: 'l6', headerName: 'Laba 6', width: 130 },
 ];
 
-export default function DataTable() {
 
+export default function DataTable() {
+    const handleClick = (params) => {
+        const name = params.row.name;
+        window.open("/" + name);
+    }
     return (
         <div style={{ height: '100vh', width: '100%' }}>
-            <DataGrid rows={list} columns={columns} pageSize={7} />
+            <DataGrid onRowClick={handleClick} rows={list} columns={columns} pageSize={7} />
         </div>)
 }
