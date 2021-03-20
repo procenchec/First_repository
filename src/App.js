@@ -8,10 +8,14 @@ import Turov from './containers/Turov'
 import Mironov from './containers/Mironov'
 import List from './containers/Common/List'
 import Nikulin from "./containers/Nikulin";
+import Korneev from "./containers/Korneev"
 
 function App() {
   return (
     <div className="App">
+      <Sheglova>
+
+      </Sheglova>
       <List />
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -27,21 +31,22 @@ function App() {
           Learn React
         </a>
       </header>*/}
-      <Sheglova>
-
-      </Sheglova>
       <Lobanov>
-        
+
       </Lobanov>
       <Rozhkova>
-        
+
       </Rozhkova>
       <Kamleva>
-        
+
       </Kamleva>
       <Turov>
-        
+
       </Turov>
+
+      <Korneev>
+      </Korneev>
+
       <Mironov>
 
       </Mironov>
