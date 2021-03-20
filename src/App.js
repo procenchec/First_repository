@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './App.css';
 import Sheglova from './containers/Sheglova'
 import Lobanov from './containers/Lobanov'
@@ -8,6 +7,7 @@ import Turov from './containers/Turov'
 import Mironov from './containers/Mironov'
 import List from './containers/Common/List'
 import Nikulin from "./containers/Nikulin";
+import Godonoga from "./containers/Godonoga";
 
 function App() {
   return (
@@ -48,6 +48,9 @@ function App() {
       <Nikulin>
 
       </Nikulin>
+      <Godonoga>
+
+      </Godonoga>
     </div>
 
   );
