@@ -37,9 +37,8 @@
 }
 
 .Sheglova {
-    background-color: rgb(77, 170, 182);
+    background-color: rgb(219, 251, 255);
     text-align: center;
-    color: red;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -71,6 +70,28 @@
 
 .Sheglova_p {
     margin-top: 40px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 800;
+}
+.Sheglova_s {
+  text-align: center; 
+  font-style: italic; 
+  text-indent: 5%;
+  letter-spacing: 0.1px;
+}
+.Sheglova_m {
+    text-align: center; 
+    font-style: italic; 
+    text-indent: 5%;
+    display: inline;
+}
+.Sheglova_c {
+    text-align: center; 
+    text-indent: 5%;
+    color:red;
+    display: inline;
+    
 }
 
 .Rozhkova {

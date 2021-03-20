@@ -12,6 +12,9 @@ import Nikulin from "./containers/Nikulin";
 function App() {
   return (
     <div className="App">
+      <Sheglova>
+
+      </Sheglova>
       <List />
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -27,20 +30,17 @@ function App() {
           Learn React
         </a>
       </header>*/}
-      <Sheglova>
-
-      </Sheglova>
       <Lobanov>
-        
+
       </Lobanov>
       <Rozhkova>
-        
+
       </Rozhkova>
       <Kamleva>
-        
+
       </Kamleva>
       <Turov>
-        
+
       </Turov>
       <Mironov>
 
