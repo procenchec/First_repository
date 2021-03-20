@@ -5,10 +5,13 @@ import Lobanov from './containers/Lobanov'
 import Rozhkova from './containers/Rozhkova'
 import Kamleva from './containers/Kamleva'
 import Turov from './containers/Turov'
+import Mironov from './containers/Mironov'
+import List from './containers/Common/List'
 
 function App() {
   return (
     <div className="App">
+      <List />
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -38,6 +41,9 @@ function App() {
       <Turov>
         
       </Turov>
+      <Mironov>
+
+      </Mironov>
     </div>
   );
 }
