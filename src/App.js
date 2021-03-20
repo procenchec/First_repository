@@ -11,6 +11,7 @@ import List from './containers/Common/List'
 import Nikulin from "./containers/Nikulin";
 import Korneev from "./containers/Korneev";
 import Godonoga from "./containers/Godonoga";
+import Mikalyuk from "./containers/Mikalyuk";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -47,6 +48,9 @@ function App() {
             <Mironov>
 
             </Mironov>
+            <Mikalyuk>
+
+            </Mikalyuk>
             <Nikulin>
 
             </Nikulin>
