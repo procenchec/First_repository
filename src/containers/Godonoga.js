@@ -3,7 +3,7 @@
 function App() {
     return (
       <div className="Godonoga">
-          <img src={'https://www.pinterest.ru/pin/391742867581654204/'} className="App-logo" alt="logo" />
+          <img src={'http://www.mobilmusic.ru/mfile/df/86/a1/1215662.gif'} className="App-logo" alt="logo" />
               
           Годонога Е.Д. Б-ИСиТ-41 
       </div>
