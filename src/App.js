@@ -1,10 +1,11 @@
 // import logo from './logo.svg';
-import './App.css';
-import Sheglova from './containers/Sheglova'
-import Lobanov from './containers/Lobanov'
-import Rozhkova from './containers/Rozhkova'
-import Kamleva from './containers/Kamleva'
-import Turov from './containers/Turov'
+import "./App.css";
+import Sheglova from "./containers/Sheglova";
+import Lobanov from "./containers/Lobanov";
+import Rozhkova from "./containers/Rozhkova";
+import Kamleva from "./containers/Kamleva";
+import Turov from "./containers/Turov";
+import { Photo as Tar } from "./containers/Tarakanov";
 
 function App() {
   return (
@@ -23,21 +24,13 @@ function App() {
           Learn React
         </a>
       </header>*/}
-      <Sheglova>
-        
-      </Sheglova>
-      <Lobanov>
-        
-      </Lobanov>
-      <Rozhkova>
-        
-      </Rozhkova>
-      <Kamleva>
-        
-      </Kamleva>
-      <Turov>
-        
-      </Turov>
+      <Sheglova></Sheglova>
+      <Lobanov></Lobanov>
+      <Rozhkova></Rozhkova>
+      <Kamleva></Kamleva>
+      <Turov></Turov>
+
+      <Tar></Tar>
     </div>
   );
 }
