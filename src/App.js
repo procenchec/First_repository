@@ -34,12 +34,11 @@ function App() {
           <Route path="/Лобанов">
           <Lobanov />
           </Route>
+          <Route path="/Щеглова">
+            <Sheglova />
+          </Route>
           <Route path="/">
             <List />
-            <Sheglova>
-
-            </Sheglova>
-
             <Lobanov>
 
             </Lobanov>
