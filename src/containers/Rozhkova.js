@@ -1,5 +1,24 @@
 // import logo from '../logo.svg';
 
+import React, { useState } from 'react';
+
+function Example() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p> {count} </p>
+      <button class="buttonR" onClick={() => setCount(count - 1)}>
+        Назад
+      </button> &nbsp;
+
+      <button class="buttonR" onClick={() => setCount(count + 1)}>
+        Вперед
+      </button>
+    </div>
+  );
+}
+
 function App() {
     return (
       <div className="Rozhkova">
@@ -10,6 +29,7 @@ function App() {
           Студентка 4 курса инженерно-технологического института<br/>
           <br/>
           <div className="rozhok"> Направление подготовки: информационные системы и технологии</div>
+          <Example />
       </div>
     );
   }
