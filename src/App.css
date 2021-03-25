@@ -47,17 +47,6 @@
     flex-direction: column;
 }
 
-.Artemyev {
-    background-color: rgb(77, 93, 182);
-    text-align: center;
-    color: rgb(206, 168, 65);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .Kamleva {
     background-color: rgb(226, 243, 74);
     text-align: center;
