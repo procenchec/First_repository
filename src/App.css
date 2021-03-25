@@ -1,22 +1,22 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 .App-header {
-  background-color: #282c34;
-  background-image: url("https://i.gifer.com/3klW.mp4");
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    background-image: url("https://i.gifer.com/3klW.mp4");
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 
@@ -25,14 +25,14 @@
 }
 
 .Procenko {
-  background-color: rgb(77, 93, 182);
-  text-align: center;
-  color: rgb(206, 168, 65);
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    background-color: rgb(77, 93, 182);
+    text-align: center;
+    color: rgb(206, 168, 65);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .Sheglova {
@@ -73,22 +73,25 @@
     font-style: italic;
     font-weight: 800;
 }
+
 .Sheglova_s {
-  text-align: center;
-  font-style: italic;
-  text-indent: 5%;
-  letter-spacing: 0.1px;
+    text-align: center;
+    font-style: italic;
+    text-indent: 5%;
+    letter-spacing: 0.1px;
 }
+
 .Sheglova_m {
     text-align: center;
     font-style: italic;
     text-indent: 5%;
     display: inline;
 }
+
 .Sheglova_c {
     text-align: center;
     text-indent: 5%;
-    color:red;
+    color: red;
     display: inline;
 
 }
@@ -143,9 +146,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
+}
 
-  .Mironov {
+.Mironov {
     background: hsl(0, 0%, 0%);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -177,9 +180,9 @@
 
 
 .Korneev {
-    background-color:rgb(255, 102, 0);
+    background-color: rgb(255, 102, 0);
     text-align: center;
-    color:rgb(77, 170, 182);
+    color: rgb(77, 170, 182);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -190,7 +193,7 @@
 .Godonoga {
     background-color: rgb(27, 187, 27);
     text-align: center;
-    color:rgb(160, 20, 27);
+    color: rgb(160, 20, 27);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -208,37 +211,38 @@
     align-items: center;
     flex-direction: column;
 }
+
 .Turov {
-  background: linear-gradient(45deg, #c0fafa, #fdb9ce);
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  font-weight: 900;
-  color: rgb(255, 102, 0);
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    background: linear-gradient(45deg, #c0fafa, #fdb9ce);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    color: rgb(255, 102, 0);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .Tarak {
-  font-family: "SFNS Display", "San Francisco", "Times New Roman", Georgia,
+    font-family: "SFNS Display", "San Francisco", "Times New Roman", Georgia,
     Times, serif;
-  background: linear-gradient(45deg, rgb(113, 35, 129), teal);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
+    background: linear-gradient(45deg, rgb(113, 35, 129), teal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .Tarak h1 {
-  color: pink;
-  font-style: italic;
-  text-decoration: underline coral;
-  margin-top: 0px;
-  text-align: center;
+    color: pink;
+    font-style: italic;
+    text-decoration: underline coral;
+    margin-top: 0px;
+    text-align: center;
 }
 
 .tooltip {

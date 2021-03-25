@@ -12,60 +12,62 @@ import Nikulin from "./containers/Nikulin";
 import Korneev from "./containers/Korneev";
 import Godonoga from "./containers/Godonoga";
 import Mikalyuk from "./containers/Mikalyuk";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { Photo as Tar } from "./containers/Tarakanov";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
+import {Photo as Tar} from "./containers/Tarakanov";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <div className="App">
-        <Switch>
-          <Route path="/Камлёва">
-            <Kamleva />
-          </Route>
-          <Route path="/Проценко">
-            <Procenko />
-          </Route>
-          <Route path="/Артемьев">
-            <Artemyev />
-          </Route>
-          <Route path="/">
-            <List />
-            <Sheglova>
+    return (
+        <BrowserRouter>
+            <div className="App">
+                <Switch>
+                    <Route path="/Камлёва">
+                        <Kamleva/>
+                    </Route>
+                    <Route path="/Проценко">
+                        <Procenko/>
+                    </Route>
+                    <Route path="/Артемьев">
+                        <Artemyev/>
+                    </Route>
+                    <Route path="/Тараканов">
+                        <Tar/>
+                    </Route>
+                    <Route path="/">
+                        <List/>
+                        <Sheglova>
 
-            </Sheglova>
+                        </Sheglova>
 
-            <Lobanov>
+                        <Lobanov>
 
-            </Lobanov>
-            <Rozhkova>
-            </Rozhkova>
+                        </Lobanov>
+                        <Rozhkova>
+                        </Rozhkova>
 
-            <Turov>
+                        <Turov>
 
-            </Turov>
-            <Korneev>
-            </Korneev>
-            <Mironov>
+                        </Turov>
+                        <Korneev>
+                        </Korneev>
+                        <Mironov>
 
-            </Mironov>
-            <Mikalyuk>
+                        </Mironov>
+                        <Mikalyuk>
 
-            </Mikalyuk>
-            <Nikulin>
+                        </Mikalyuk>
+                        <Nikulin>
 
-            </Nikulin>
-            <Godonoga>
+                        </Nikulin>
+                        <Godonoga>
 
-            </Godonoga>
+                        </Godonoga>
 
-            <Tar></Tar>
 
-          </Route>
-        </Switch>
-      </div>
-    </BrowserRouter>
-  );
+                    </Route>
+                </Switch>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;
