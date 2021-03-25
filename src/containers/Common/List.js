@@ -21,6 +21,6 @@ export default function DataTable() {
     }
     return (
         <div style={{ height: '100vh', width: '100%' }}>
-            <DataGrid onRowClick={handleClick} rows={list} columns={columns} pageSize={7} />
+            <DataGrid onRowClick={handleClick} rows={list} columns={columns} pageSize={10} />
         </div>)
 }
