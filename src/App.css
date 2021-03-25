@@ -58,16 +58,6 @@
     flex-direction: column;
 }
 
-.Kamleva {
-    background-color: rgb(226, 243, 74);
-    text-align: center;
-    color: rgb(221, 44, 44);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
 .button {
     background-color: #4CAF50; 
@@ -108,7 +98,7 @@
 
 .Rozhkova {
 
-    background: linear-gradient(45deg, #d59bec, #36f5c5);
+    background: linear-gradient(45deg, #d59bec, #36f5c5); 
     text-align: center;
     color: rgb(23, 105, 67);
     font-family: Bookman Old Style, Helvetica, sans-serif;
@@ -122,13 +112,6 @@
 
 }
 
-.rozhok {
-    text-align: center;
-    color: rgb(112, 49, 65);
-    font-family: Bookman Old Style, Helvetica, sans-serif;
-    font-style: oblique;
-
-}
 .buttonR {
     background: linear-gradient(45deg, #686beb, #f1b863);
     border: none;
