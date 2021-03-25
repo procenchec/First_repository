@@ -69,6 +69,17 @@
     flex-direction: column;
 }
 
+.button {
+    background-color: #4CAF50; 
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
 .Sheglova_p {
     margin-top: 40px;
     font-size: 20px;
@@ -117,6 +128,16 @@
     font-family: Bookman Old Style, Helvetica, sans-serif;
     font-style: oblique;
 
+}
+.buttonR {
+    background: linear-gradient(45deg, #686beb, #f1b863);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 .Lobanov {
