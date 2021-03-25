@@ -19,6 +19,7 @@
     color: white;
 }
 
+
 .App-link {
     color: #61dafb;
 }
@@ -37,9 +38,8 @@
 }
 
 .Sheglova {
-    background-color: rgb(77, 170, 182);
+    background-color: rgb(219, 251, 255);
     text-align: center;
-    color: red;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -71,13 +71,37 @@
 
 .Sheglova_p {
     margin-top: 40px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 800;
+}
+.Sheglova_s {
+  text-align: center; 
+  font-style: italic; 
+  text-indent: 5%;
+  letter-spacing: 0.1px;
+}
+.Sheglova_m {
+    text-align: center; 
+    font-style: italic; 
+    text-indent: 5%;
+    display: inline;
+}
+.Sheglova_c {
+    text-align: center; 
+    text-indent: 5%;
+    color:red;
+    display: inline;
+    
 }
 
 .Rozhkova {
 
-    background-color: rgba(126, 19, 226, 0.733);
+    background: linear-gradient(45deg, #d59bec, #36f5c5);
     text-align: center;
-    color: rgb(243, 239, 17);
+    color: rgb(23, 105, 67);
+    font-family: Bookman Old Style, Helvetica, sans-serif;
+    font-style: oblique;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -87,6 +111,13 @@
 
 }
 
+.rozhok {
+    text-align: center;
+    color: rgb(112, 49, 65);
+    font-family: Bookman Old Style, Helvetica, sans-serif;
+    font-style: oblique;
+
+}
 
 .Lobanov {
 
@@ -147,3 +178,35 @@
 }
 
 
+.Korneev {
+    background-color:rgb(255, 102, 0);
+    text-align: center;
+    color:rgb(77, 170, 182);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Godonoga {
+    background-color: rgb(27, 187, 27);
+    text-align: center;
+    color:rgb(160, 20, 27);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Mikalyuk {
+    background-color: rgb(241, 12, 62);
+    text-align: center;
+    color: rgb(69, 116, 92);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
