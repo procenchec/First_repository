@@ -12,6 +12,7 @@ import Nikulin from "./containers/Nikulin";
 import Korneev from "./containers/Korneev";
 import Godonoga from "./containers/Godonoga";
 import Mikalyuk from "./containers/Mikalyuk";
+import Sadullaev from "./containers/Sadullaev";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -57,6 +58,8 @@ function App() {
             <Godonoga>
 
             </Godonoga>
+            <Sadullaev>
+              </Sadullaev>
           </Route>
         </Switch>
       </div>

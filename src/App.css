@@ -68,7 +68,22 @@
     align-items: center;
     flex-direction: column;
 }
-
+.Sadullaev {
+    background-color: #282c34;
+    text-align: center;
+    color: aqua;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Sadullaev_p {
+    margin-top: 40px;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 600;
+}
 .Sheglova_p {
     margin-top: 40px;
     font-size: 20px;
