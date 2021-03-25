@@ -69,6 +69,18 @@
     flex-direction: column;
 }
 
+.Leonova {
+    background-color:bisque;
+    text-align: center;
+    text-indent:5%;
+    min-height: 100vh;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .Sheglova_p {
     margin-top: 40px;
     font-size: 20px;
