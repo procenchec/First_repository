@@ -7,12 +7,14 @@ import Rozhkova from './containers/Rozhkova'
 import Kamleva from './containers/Kamleva'
 import Turov from './containers/Turov'
 import Mironov from './containers/Mironov'
+import Korneev from './containers/Korneev'
 import List from './containers/Common/List'
 import Nikulin from "./containers/Nikulin";
-import Korneev from "./containers/Korneev";
 import Godonoga from "./containers/Godonoga";
 import Mikalyuk from "./containers/Mikalyuk";
 import Leonova from "./containers/Leonova";
+import Sadullaev from "./containers/Sadullaev";
+import BykovOvsepyan from "./containers/BykovOvsepyan";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -29,12 +31,17 @@ function App() {
           <Route path="/Артемьев">
             <Artemyev />
           </Route>
+          <Route path="/Корнеев">
+            <Korneev />
+          </Route>
+          <Route path="/Лобанов">
+            <Lobanov />
+          </Route>
+          <Route path="/Щеглова">
+            <Sheglova />
+          </Route>
           <Route path="/">
             <List />
-            <Sheglova>
-
-            </Sheglova>
-
             <Lobanov>
 
             </Lobanov>
@@ -45,6 +52,7 @@ function App() {
 
             </Turov>
             <Korneev>
+
             </Korneev>
             <Mironov>
 
@@ -59,7 +67,12 @@ function App() {
 
             </Godonoga>
             <Leonova>
-              </Leonova>
+            </Leonova>
+            <Sadullaev>
+            </Sadullaev>
+            <BykovOvsepyan>
+
+            </BykovOvsepyan>
           </Route>
         </Switch>
       </div>
