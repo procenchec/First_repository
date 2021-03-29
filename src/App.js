@@ -6,15 +6,17 @@ import Lobanov from './containers/Lobanov'
 import Rozhkova from './containers/Rozhkova'
 import Turov from './containers/Turov'
 import Mironov from './containers/Mironov'
-import Korneev from './containers/Korneev'
 import List from './containers/Common/List'
 import Nikulin from "./containers/Nikulin";
+import Korneev from "./containers/Korneev";
 import Godonoga from "./containers/Godonoga";
 import Mikalyuk from "./containers/Mikalyuk";
+import { Photo as Tar } from "./containers/Tarakanov";
 import Leonova from "./containers/Leonova";
 import Sadullaev from "./containers/Sadullaev";
 import BykovOvsepyan from "./containers/BykovOvsepyan";
 import UrlKamleva from "./containers/Kamleva/Url";
+// import Kosyrev from "./containers/Kosyrev";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -29,6 +31,9 @@ function App() {
           <Route path="/Артемьев">
             <Artemyev />
           </Route>
+          <Route path="/Тараканов">
+            <Tar />
+          </Route>
           <Route path="/Корнеев">
             <Korneev />
           </Route>
@@ -38,7 +43,9 @@ function App() {
           <Route path="/Щеглова">
             <Sheglova />
           </Route>
-
+          {/* <Route path="/Косырев">
+                        <Kosyrev/>
+                    </Route> */}
           <Route path="/">
             <List />
             <Lobanov>
@@ -72,6 +79,7 @@ function App() {
             <BykovOvsepyan>
 
             </BykovOvsepyan>
+            {/* <Kosyrev/> */}
           </Route>
         </Switch>
       </div>
