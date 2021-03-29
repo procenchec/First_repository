@@ -1,5 +1,8 @@
 import list from '../../constants/common';
 import { DataGrid } from '@material-ui/data-grid';
+import React from "react";
+import Kosyrev from "../Kosyrev";
+// import Protsenko from '../Protsenko'
 
 const columns = [
     //{ field: 'id', headerName: 'ID', width: 70 },
@@ -15,12 +18,23 @@ const columns = [
 
 
 export default function DataTable() {
+    const stateDrawer = React.useState(false);
+    const [state, setState] = stateDrawer;
+
     const handleClick = (params) => {
+        debugger
         const name = params.row.name;
-        window.open("/" + name);
+        if (name === "Косырев") {
+            setState(true);
+        } else {
+            window.open("/" + name);
+        }
     }
     return (
-        <div style={{ height: '100vh', width: '100%' }}>
-            <DataGrid onRowClick={handleClick} rows={list} columns={columns} pageSize={26} />
-        </div>)
+        <>
+            <div style={{ height: '100vh', width: '100%' }}>
+                <DataGrid onRowClick={handleClick} rows={list} columns={columns} pageSize={26} />
+            </div>
+            <Kosyrev stateDrawer={stateDrawer} />
+        </>)
 }
