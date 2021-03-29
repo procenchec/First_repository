@@ -23,8 +23,8 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
+                <UrlKamleva />
                 <Switch>
-                    <UrlKamleva />
                     <Route path="/Проценко">
                         <Procenko/>
                     </Route>
