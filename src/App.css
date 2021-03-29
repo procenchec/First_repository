@@ -259,6 +259,11 @@
     align-items: center;
     flex-direction: column;
 }
+.Kosyrev{
+    background: rgb(216, 56, 16);
+    text-align: center;
+    color: rgb(53, 219, 31);
+}
 
 .Turov {
     background: linear-gradient(45deg, #c0fafa, #fdb9ce);

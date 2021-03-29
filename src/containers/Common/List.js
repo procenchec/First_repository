@@ -1,5 +1,7 @@
 import list from '../../constants/common';
 import { DataGrid } from '@material-ui/data-grid';
+import React from "react";
+import Protsenko from '../Protsenko'
 
 const columns = [
     //{ field: 'id', headerName: 'ID', width: 70 },
@@ -15,9 +17,18 @@ const columns = [
 
 
 export default function DataTable() {
+    const [state, setState] = React.useState(false);
+
     const handleClick = (params) => {
+
         const name = params.row.name;
-        window.open("/" + name);
+        if (name === "Проценко")
+        {
+            setState(true);
+        } else 
+        {
+            window.open("/" + name);
+        }
     }
     return (
         <div style={{ height: '100vh', width: '100%' }}>
