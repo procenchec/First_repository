@@ -20,35 +20,35 @@ import UrlKamleva from "./containers/Kamleva/Url";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <div className="App">
-        <UrlKamleva />
-        <Switch>
-          <Route path="/Проценко">
-            <Procenko />
-          </Route>
-          <Route path="/Артемьев">
-            <Artemyev />
-          </Route>
-          <Route path="/Тараканов">
-            <Tar />
-          </Route>
-          <Route path="/Корнеев">
-            <Korneev />
-          </Route>
-          <Route path="/Лобанов">
-            <Lobanov />
-          </Route>
-          <Route path="/Щеглова">
-            <Sheglova />
-          </Route>
-          {/* <Route path="/Косырев">
-                        <Kosyrev/>
-                    </Route> */}
-          <Route path="/">
-            <List />
-            <Lobanov>
+    return (
+        <BrowserRouter>
+            <div className="App">
+                <UrlKamleva />
+                <Switch>
+                    <Route path="/Проценко">
+                        <Procenko/>
+                    </Route>
+                    <Route path="/Артемьев">
+                        <Artemyev/>
+                    </Route>
+                    <Route path="/Тараканов">
+                        <Tar/>
+                    </Route>
+                    <Route path="/Корнеев">
+                        <Korneev/>
+                    </Route>
+                    <Route path="/Лобанов">
+                        <Lobanov/>
+                    </Route>
+                    <Route path="/Щеглова">
+                        <Sheglova/>
+                    </Route>
+                    <Route path="/Никулин">
+                        <Nikulin/>
+                    </Route>
+                    <Route path="/">
+                        <List/>
+                        <Lobanov>
 
             </Lobanov>
             <Rozhkova>
