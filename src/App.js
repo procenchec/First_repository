@@ -16,7 +16,7 @@ import {Photo as Tar} from "./containers/Tarakanov";
 import Leonova from "./containers/Leonova";
 import Sadullaev from "./containers/Sadullaev";
 import BykovOvsepyan from "./containers/BykovOvsepyan";
-import Kosyrev from "./containers/Kosyrev";
+// import Kosyrev from "./containers/Kosyrev";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 
 function App() {
@@ -45,9 +45,9 @@ function App() {
                     <Route path="/Щеглова">
                         <Sheglova/>
                     </Route>
-                    <Route path="/Косырев">
+                    {/* <Route path="/Косырев">
                         <Kosyrev/>
-                    </Route>
+                    </Route> */}
                     <Route path="/">
                         <List/>
                         <Lobanov>
@@ -81,7 +81,7 @@ function App() {
                         <BykovOvsepyan>
 
                         </BykovOvsepyan>
-                        <Kosyrev/>
+                        {/* <Kosyrev/> */}
                     </Route>
                 </Switch>
             </div>
