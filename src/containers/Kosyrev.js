@@ -20,4 +20,4 @@ function Darwerbut({ stateDrawer }) {
   </Drawer>
   );
 }
-export default Darwerbut;
+export default App;

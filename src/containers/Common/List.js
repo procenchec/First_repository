@@ -2,6 +2,9 @@ import list from '../../constants/common';
 import { DataGrid } from '@material-ui/data-grid';
 import React from "react";
 import Kosyrev from "../Kosyrev";
+import { Photo as Tarakanov }  from "../Tarakanov";
+import Drawer from "../../components/Drawer";
+import Nikulin from "../Nikulin"
 // import Protsenko from '../Protsenko'
 
 const columns = [
@@ -16,15 +19,17 @@ const columns = [
     { field: 'l6', headerName: 'Laba 6', width: 130 },
 ];
 
+const people = {"Косырев":Kosyrev, "Тараканов":Tarakanov, "Никулин":Nikulin};
 
 export default function DataTable() {
     const stateDrawer = React.useState(false);
     const [state, setState] = stateDrawer;
-
+    const [Content, setConent] = React.useState();
+    console.log(Content);
     const handleClick = (params) => {
-        debugger
         const name = params.row.name;
-        if (name === "Косырев") {
+        if (name in people) {
+            setConent(people[name])
             setState(true);
         } else {
             window.open("/" + name);
@@ -33,8 +38,14 @@ export default function DataTable() {
     return (
         <>
             <div style={{ height: '100vh', width: '100%' }}>
+
                 <DataGrid onRowClick={handleClick} rows={list} columns={columns} pageSize={26} />
             </div>
-            <Kosyrev stateDrawer={stateDrawer} />
+            {Content && <Drawer stateDrawer = {stateDrawer}>
+
+
+                {Content}
+            </Drawer>}
+
         </>)
 }
