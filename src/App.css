@@ -35,20 +35,8 @@
     flex-direction: column;
 }
 
-.Sheglova {
-    background-color: rgb(219, 251, 255);
-    text-align: center;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .Artemyev {
     background-color: rgb(77, 93, 182);
-    text-align: center;
-    color: rgb(206, 168, 65);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -67,12 +55,32 @@
     flex-direction: column;
 }
 
-.Sheglova_p {
-    margin-top: 40px;
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 800;
+.Sadullaev {
+    background-color: #282c34;
+    text-align: center;
+    color: aqua;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+.Sadullaev_p {
+    margin-top: 40px;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 
 .Sheglova_s {
     text-align: center;
@@ -80,6 +88,17 @@
     text-indent: 5%;
     letter-spacing: 0.1px;
 }
+
+.Leonova {
+    background-color:bisque;
+    text-align: center;
+    text-indent:5%;
+    min-height: 100vh;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 .Sheglova_m {
     text-align: center;
@@ -119,7 +138,16 @@
     font-style: oblique;
 
 }
-
+.buttonR {
+    background: linear-gradient(45deg, #686beb, #f1b863);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
 .Lobanov {
 
     background-color: rgb(77, 93, 182);
@@ -147,6 +175,21 @@
     align-items: center;
     flex-direction: column;
 }
+
+
+  .BykovOvsepyan {
+    background: linear-gradient(45deg, #0d5858, #db7f42);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    color: rgb(85, 39, 9);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
 .Mironov {
     background: hsl(0, 0%, 0%);
