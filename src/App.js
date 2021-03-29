@@ -12,9 +12,14 @@ import Nikulin from "./containers/Nikulin";
 import Korneev from "./containers/Korneev";
 import Godonoga from "./containers/Godonoga";
 import Mikalyuk from "./containers/Mikalyuk";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import {Photo as Tar} from "./containers/Tarakanov";
+import Leonova from "./containers/Leonova";
+import Sadullaev from "./containers/Sadullaev";
+import BykovOvsepyan from "./containers/BykovOvsepyan";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
 
 function App() {
+<<<<<<< HEAD
   return (
     <BrowserRouter>
       <div className="App">
@@ -28,37 +33,71 @@ function App() {
           <Route path="/">
             <List />
             <Sheglova>
+=======
+    return (
+        <BrowserRouter>
+            <div className="App">
+                <Switch>
+                    <Route path="/Камлёва">
+                        <Kamleva/>
+                    </Route>
+                    <Route path="/Проценко">
+                        <Procenko/>
+                    </Route>
+                    <Route path="/Артемьев">
+                        <Artemyev/>
+                    </Route>
+                    <Route path="/Тараканов">
+                        <Tar/>
+                    </Route>
+                    <Route path="/Корнеев">
+                        <Korneev/>
+                    </Route>
+                    <Route path="/Лобанов">
+                        <Lobanov/>
+                    </Route>
+                    <Route path="/Щеглова">
+                        <Sheglova/>
+                    </Route>
+                    <Route path="/">
+                        <List/>
+                        <Lobanov>
+>>>>>>> 20560f0d4bfc98b8f4bafe1ad127b41916bf6db7
 
-            </Sheglova>
+                        </Lobanov>
+                        <Rozhkova>
+                        </Rozhkova>
 
-            <Lobanov>
+                        <Turov>
 
-            </Lobanov>
-            <Rozhkova>
-            </Rozhkova>
+                        </Turov>
+                        <Korneev>
 
-            <Turov>
+                        </Korneev>
+                        <Mironov>
 
-            </Turov>
-            <Korneev>
-            </Korneev>
-            <Mironov>
+                        </Mironov>
+                        <Mikalyuk>
 
-            </Mironov>
-            <Mikalyuk>
+                        </Mikalyuk>
+                        <Nikulin>
 
-            </Mikalyuk>
-            <Nikulin>
+                        </Nikulin>
+                        <Godonoga>
 
-            </Nikulin>
-            <Godonoga>
+                        </Godonoga>
+                        <Leonova>
+                        </Leonova>
+                        <Sadullaev>
+                        </Sadullaev>
+                        <BykovOvsepyan>
 
-            </Godonoga>
-          </Route>
-        </Switch>
-      </div>
-    </BrowserRouter>
-  );
+                        </BykovOvsepyan>
+                    </Route>
+                </Switch>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;

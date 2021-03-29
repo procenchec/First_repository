@@ -9,7 +9,7 @@
 
 .App-header {
     background-color: #282c34;
-    background-image: url('https://i.gifer.com/3klW.mp4');
+    background-image: url("https://i.gifer.com/3klW.mp4");
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -25,21 +25,9 @@
 }
 
 .Procenko {
-
     background-color: rgb(77, 93, 182);
     text-align: center;
     color: rgb(206, 168, 65);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-}
-
-.Sheglova {
-    background-color: rgb(219, 251, 255);
-    text-align: center;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -49,8 +37,6 @@
 
 .Artemyev {
     background-color: rgb(77, 93, 182);
-    text-align: center;
-    color: rgb(206, 168, 65);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -69,30 +55,67 @@
     flex-direction: column;
 }
 
-.Sheglova_p {
+.Sadullaev {
+    background-color: #282c34;
+    text-align: center;
+    color: aqua;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Sadullaev_p {
     margin-top: 40px;
-    font-size: 20px;
+    font-size: 30px;
     font-style: italic;
-    font-weight: 800;
+    font-weight: 600;
 }
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
 .Sheglova_s {
-  text-align: center; 
-  font-style: italic; 
-  text-indent: 5%;
-  letter-spacing: 0.1px;
+    text-align: center;
+    font-style: italic;
+    text-indent: 5%;
+    letter-spacing: 0.1px;
 }
+
+.Leonova {
+    background-color: bisque;
+    text-align: center;
+    text-indent: 5%;
+    min-height: 100vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .Sheglova_m {
-    text-align: center; 
-    font-style: italic; 
+    text-align: center;
+    font-style: italic;
     text-indent: 5%;
     display: inline;
 }
+
 .Sheglova_c {
-    text-align: center; 
+    text-align: center;
     text-indent: 5%;
-    color:red;
+    color: red;
     display: inline;
-    
+
 }
 
 .Rozhkova {
@@ -117,6 +140,17 @@
     font-family: Bookman Old Style, Helvetica, sans-serif;
     font-style: oblique;
 
+}
+
+.buttonR {
+    background: linear-gradient(45deg, #686beb, #f1b863);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 .Lobanov {
@@ -145,9 +179,24 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
+}
 
-  .Mironov {
+
+.BykovOvsepyan {
+    background: linear-gradient(45deg, #0d5858, #db7f42);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    color: rgb(85, 39, 9);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Mironov {
     background: hsl(0, 0%, 0%);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -179,9 +228,9 @@
 
 
 .Korneev {
-    background-color:rgb(255, 102, 0);
+    background-color: rgb(255, 102, 0);
     text-align: center;
-    color:rgb(77, 170, 182);
+    color: rgb(77, 170, 182);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -192,7 +241,7 @@
 .Godonoga {
     background-color: rgb(27, 187, 27);
     text-align: center;
-    color:rgb(160, 20, 27);
+    color: rgb(160, 20, 27);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -209,6 +258,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+<<<<<<< HEAD
   }
 
 
@@ -216,9 +266,48 @@
     background: rgb(216, 56, 16);
     text-align: center;
     color: rgb(53, 219, 31);
+=======
+}
+
+.Turov {
+    background: linear-gradient(45deg, #c0fafa, #fdb9ce);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    color: rgb(255, 102, 0);
+>>>>>>> 20560f0d4bfc98b8f4bafe1ad127b41916bf6db7
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+<<<<<<< HEAD
+=======
+}
+
+.Tarak {
+    font-family: "SFNS Display", "San Francisco", "Times New Roman", Georgia,
+    Times, serif;
+    background: linear-gradient(45deg, rgb(113, 35, 129), teal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.Tarak h1 {
+    color: pink;
+    font-style: italic;
+    text-decoration: underline coral;
+    margin-top: 0;
+    text-align: center;
+}
+
+.tooltip {
+    background-color: blue !important;
+    position: absolute;
+    bottom: 50pt;
+>>>>>>> 20560f0d4bfc98b8f4bafe1ad127b41916bf6db7
 }
