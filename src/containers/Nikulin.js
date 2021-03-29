@@ -11,6 +11,7 @@ function App() {
             <img
                 src={'https://media1.tenor.com/images/8ea91a8d7e4310051cbec63ae81be95a/tenor.gif?itemid=15029133'}
                 className="App-logo" alt="logo"/>
+
             Никулин ВВ Б-ИСиТ 41
         </div>
     );
