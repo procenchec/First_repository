@@ -33,5 +33,6 @@ export function Photo() {
             </Clicker>
         </div>
     );
+
     return web;
 }
