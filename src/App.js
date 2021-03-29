@@ -22,9 +22,6 @@ function App() {
           <Route path="/Камлёва">
             <Kamleva />
           </Route>
-          <Route path="/Проценко">
-            <Procenko />
-          </Route>
           <Route path="/Артемьев">
             <Artemyev />
           </Route>
