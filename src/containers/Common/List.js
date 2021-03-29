@@ -32,11 +32,6 @@ export default function DataTable() {
     }
     return (
         <div style={{ height: '100vh', width: '100%' }}>
-<<<<<<< HEAD
-            <DataGrid onRowClick={handleClick} rows={list} columns={columns} pageSize={7} />
-            <Protsenko open={state}/>
-=======
             <DataGrid onRowClick={handleClick} rows={list} columns={columns} pageSize={26} />
->>>>>>> 20560f0d4bfc98b8f4bafe1ad127b41916bf6db7
         </div>)
 }

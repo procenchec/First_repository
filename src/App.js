@@ -16,24 +16,10 @@ import {Photo as Tar} from "./containers/Tarakanov";
 import Leonova from "./containers/Leonova";
 import Sadullaev from "./containers/Sadullaev";
 import BykovOvsepyan from "./containers/BykovOvsepyan";
+import Kosyrev from "./containers/Kosyrev";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 
 function App() {
-<<<<<<< HEAD
-  return (
-    <BrowserRouter>
-      <div className="App">
-        <Switch>
-          <Route path="/Камлёва">
-            <Kamleva />
-          </Route>
-          <Route path="/Артемьев">
-            <Artemyev />
-          </Route>
-          <Route path="/">
-            <List />
-            <Sheglova>
-=======
     return (
         <BrowserRouter>
             <div className="App">
@@ -62,7 +48,6 @@ function App() {
                     <Route path="/">
                         <List/>
                         <Lobanov>
->>>>>>> 20560f0d4bfc98b8f4bafe1ad127b41916bf6db7
 
                         </Lobanov>
                         <Rozhkova>
@@ -93,6 +78,7 @@ function App() {
                         <BykovOvsepyan>
 
                         </BykovOvsepyan>
+                        <Kosyrev/>
                     </Route>
                 </Switch>
             </div>
