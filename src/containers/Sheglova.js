@@ -42,6 +42,7 @@ const SheglovaP = styled.p`
    font-size: 20px;
    font-style: italic;
    font-weight: 800;
+   width: 50vw;
 `;
 
 const Sheglova = styled.div`
