@@ -11,7 +11,8 @@ import kosyrev from "../../constants/kosyrev";
 import mironov from "../../constants/Mironov";
 import sheglovAnna from '../../constants/sheglova';
 import Sheglova from '../Sheglova';
-
+import Rozhkova from "../Rozhkova";
+import rozhkova from "../../constants/rozhkova";
 // import Protsenko from '../Protsenko'
 
 const columns = [
@@ -34,6 +35,7 @@ const people = {
     "Миронов": { name: Mironov, ...mironov },
     "Артемьев": { name: Artemyev, },
     "Щеглова": { name: Sheglova, ...sheglovAnna },
+    "Рожкова": { name: Rozhkova, ...rozhkova } 
 };
 
 export default function DataTable() {
