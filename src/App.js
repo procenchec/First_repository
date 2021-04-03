@@ -23,6 +23,7 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
+
                 <UrlKamleva />
                 <Switch>
                     <Route path="/Проценко">
@@ -60,9 +61,6 @@ function App() {
             <Korneev>
 
             </Korneev>
-            <Mironov>
-
-            </Mironov>
             <Mikalyuk>
 
             </Mikalyuk>
@@ -79,7 +77,6 @@ function App() {
             <BykovOvsepyan>
 
             </BykovOvsepyan>
-            {/* <Kosyrev/> */}
           </Route>
         </Switch>
       </div>
