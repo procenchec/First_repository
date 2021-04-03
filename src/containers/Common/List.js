@@ -9,6 +9,8 @@ import Mironov from "../Mironov";
 import Artemyev from "../Artemyev";
 import kosyrev from "../../constants/kosyrev";
 import mironov from "../../constants/Mironov";
+import artemyev from "../../constants/artemyev";
+import {isValidElement} from 'react';
 // import Protsenko from '../Protsenko'
 
 const columns = [
@@ -27,7 +29,7 @@ const people = { "Косырев": { name: Kosyrev, ...kosyrev },
 "Тараканов": { name: Tarakanov,  }, 
 "Никулин": { name: Nikulin, },
 "Миронов": { name: Mironov, ...mironov }, 
-"Артемьев": { name: Artemyev, } };
+"Артемьев": { name: Artemyev, ...artemyev} };
 
 export default function DataTable() {
     const stateDrawer = React.useState(false);
@@ -38,8 +40,12 @@ export default function DataTable() {
         console.log(params);
         const { name } = params.row;
         if (name in people) {
-            setConent(people[name][params.field])
-            setState(true);
+
+            if (isValidElement(people[name][params.field]))
+            {
+                setConent(people[name][params.field])
+                setState(true);
+            }
         } else {
             window.open("/" + name);
         }
