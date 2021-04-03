@@ -9,6 +9,8 @@ import Mironov from "../Mironov";
 import Artemyev from "../Artemyev";
 import kosyrev from "../../constants/kosyrev";
 import mironov from "../../constants/Mironov";
+import Rozhkova from "../Rozhkova";
+import rozhkova from "../../constants/rozhkova";
 // import Protsenko from '../Protsenko'
 
 const columns = [
@@ -27,7 +29,8 @@ const people = { "Косырев": { name: Kosyrev, ...kosyrev },
 "Тараканов": { name: Tarakanov,  }, 
 "Никулин": { name: Nikulin, },
 "Миронов": { name: Mironov, ...mironov }, 
-"Артемьев": { name: Artemyev, } };
+"Артемьев": { name: Artemyev, },
+"Рожкова": { name: Rozhkova, ...rozhkova } }; 
 
 export default function DataTable() {
     const stateDrawer = React.useState(false);
