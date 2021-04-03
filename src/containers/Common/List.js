@@ -4,7 +4,9 @@ import React from "react";
 import Kosyrev from "../Kosyrev";
 import { Photo as Tarakanov }  from "../Tarakanov";
 import Drawer from "../../components/Drawer";
-import Nikulin from "../Nikulin"
+import Nikulin from "../Nikulin";
+import Mironov from "../Mironov";
+import artemyev from "../Artemyev";
 // import Protsenko from '../Protsenko'
 
 const columns = [
@@ -19,7 +21,7 @@ const columns = [
     { field: 'l6', headerName: 'Laba 6', width: 130 },
 ];
 
-const people = {"Косырев":Kosyrev, "Тараканов":Tarakanov, "Никулин":Nikulin};
+const people = {"Косырев":Kosyrev, "Тараканов":Tarakanov, "Никулин":Nikulin, "Миронов":Mironov, "Артемьев":artemyev};
 
 export default function DataTable() {
     const stateDrawer = React.useState(false);
