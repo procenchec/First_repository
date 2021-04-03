@@ -11,6 +11,14 @@ import BykovOvsepyan from "../BykovOvsepyan";
 import kosyrev from "../../constants/kosyrev";
 import mironov from "../../constants/Mironov";
 import ovs from "../../constants/Ovsepyan";
+import Protsenko from '../Protsenko'
+import protsenko from "../../constants/protsenko";
+import artemyev from "../../constants/artemyev";
+import {isValidElement} from 'react';
+import sheglovAnna from '../../constants/sheglova';
+import Sheglova from '../Sheglova';
+import Rozhkova from "../Rozhkova";
+import rozhkova from "../../constants/rozhkova";
 // import Protsenko from '../Protsenko'
 
 const columns = [
@@ -23,6 +31,7 @@ const columns = [
     { field: 'l4', headerName: 'Laba 4', width: 130 },
     { field: 'l5', headerName: 'Laba 5', width: 130 },
     { field: 'l6', headerName: 'Laba 6', width: 130 },
+    { field: 'l7', headerName: 'Laba 7', width: 130 },
 ];
 
 const people = {
@@ -31,8 +40,12 @@ const people = {
     "Никулин": { name: Nikulin, },
     "Миронов": { name: Mironov, ...mironov },
     "Артемьев": { name: Artemyev, },
-    "Овсепян": { name: BykovOvsepyan, ...ovs}
+    "Овсепян": { name: BykovOvsepyan, ...ovs},
 
+    "Щеглова": { name: Sheglova, ...sheglovAnna },
+    "Рожкова": { name: Rozhkova, ...rozhkova },
+    "Артемьев": { name: Artemyev, ...artemyev},
+    "Проценко": {name: Protsenko, ...protsenko} 
 };
 
 export default function DataTable() {
@@ -41,11 +54,14 @@ export default function DataTable() {
     const [Content, setConent] = React.useState();
     console.log(Content);
     const handleClick = (params) => {
-        console.log(params);
         const { name } = params.row;
         if (name in people) {
-            setConent(people[name][params.field])
-            setState(true);
+
+            if (isValidElement(people[name][params.field]))
+            {
+                setConent(people[name][params.field])
+                setState(true);
+            }
         } else {
             window.open("/" + name);
         }
