@@ -8,6 +8,7 @@ import mironovlabs from './Mironov';
 import kosyrevLabs from './kosyrev';
 import protsenko from "./protsenko"
 import { isValidElement } from 'react';
+import rozhkovaLabs from './rozhkova';
 
 let i = 0;
 
@@ -28,8 +29,13 @@ const list = [gen('Камлёва', 'KamljovaNS@studklg.ru', kamlevaLabs),
 gen('Миронов', 'MironovDY@studklg.ru', mironovlabs),
 gen('Косырев', 'KosyrevMA@studklg.ru', kosyrevLabs),
 gen('Артемьев', 'bogarto@mail.ru', labsArtemev),
+<<<<<<< HEAD
 gen('Проценко', 'procenchec@gmail.com', protsenko),
 gen('Рожкова', ''),
+=======
+gen('Проценко', ''), 
+gen('Рожкова', 'RozhkovaVAn@studklg.ru', rozhkovaLabs),
+>>>>>>> 8bb5b2b5b23ea68aba0ced6816168bb9f964d2bf
 gen('Тараканов', ''),
 gen('Белявский', ''), gen('Корнеев', '', korneevLabs),
 gen('Лобанов', '', lobanovLabs),
