@@ -9,16 +9,15 @@ import Mironov from "../Mironov";
 import Artemyev from "../Artemyev";
 import kosyrev from "../../constants/kosyrev";
 import mironov from "../../constants/Mironov";
-<<<<<<< HEAD
 import Protsenko from '../Protsenko'
 import protsenko from "../../constants/protsenko";
-=======
+import artemyev from "../../constants/artemyev";
+import {isValidElement} from 'react';
 import sheglovAnna from '../../constants/sheglova';
 import Sheglova from '../Sheglova';
 import Rozhkova from "../Rozhkova";
 import rozhkova from "../../constants/rozhkova";
 // import Protsenko from '../Protsenko'
->>>>>>> 8bb5b2b5b23ea68aba0ced6816168bb9f964d2bf
 
 const columns = [
     //{ field: 'id', headerName: 'ID', width: 70 },
@@ -33,14 +32,6 @@ const columns = [
     { field: 'l7', headerName: 'Laba 7', width: 130 },
 ];
 
-<<<<<<< HEAD
-const people = { "Косырев": { name: Kosyrev, ...kosyrev }, 
-"Тараканов": { name: Tarakanov,  }, 
-"Никулин": { name: Nikulin, },
-"Миронов": { name: Mironov, ...mironov }, 
-"Артемьев": { name: Artemyev, },
-"Проценко": {name: Protsenko, ...protsenko} };
-=======
 const people = {
     "Косырев": { name: Kosyrev, ...kosyrev },
     "Тараканов": { name: Tarakanov, },
@@ -48,9 +39,10 @@ const people = {
     "Миронов": { name: Mironov, ...mironov },
     "Артемьев": { name: Artemyev, },
     "Щеглова": { name: Sheglova, ...sheglovAnna },
-    "Рожкова": { name: Rozhkova, ...rozhkova } 
+    "Рожкова": { name: Rozhkova, ...rozhkova },
+    "Артемьев": { name: Artemyev, ...artemyev},
+    "Проценко": {name: Protsenko, ...protsenko} 
 };
->>>>>>> 8bb5b2b5b23ea68aba0ced6816168bb9f964d2bf
 
 export default function DataTable() {
     const stateDrawer = React.useState(false);
@@ -60,8 +52,12 @@ export default function DataTable() {
     const handleClick = (params) => {
         const { name } = params.row;
         if (name in people) {
-            setConent(people[name][params.field])
-            setState(true);
+
+            if (isValidElement(people[name][params.field]))
+            {
+                setConent(people[name][params.field])
+                setState(true);
+            }
         } else {
             window.open("/" + name);
         }
