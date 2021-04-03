@@ -6,6 +6,7 @@ import lobanovLabs from '../constants/Lobanov';
 import korneevLabs from '../constants/Korneev';
 import mironovlabs from './Mironov';
 import kosyrevLabs from './kosyrev';
+import OvsepyanLabs from './Ovsepyan';
 import { isValidElement } from 'react';
 
 let i = 0;
@@ -34,7 +35,7 @@ gen('Лобанов', '', lobanovLabs),
 gen('Щеглова', '', sheglovaLabs),
 gen('Никулин', ''),
 gen('Садулаев', ''),
-gen('Овсепян', ''),
+gen('Овсепян', 'OvsepyanAM@studklg.ru', OvsepyanLabs),
 gen('Быков', ''),
 gen('Микалюк', ''),
 gen('Годонога', ''),

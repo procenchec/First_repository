@@ -7,8 +7,10 @@ import Drawer from "../../components/Drawer";
 import Nikulin from "../Nikulin";
 import Mironov from "../Mironov";
 import Artemyev from "../Artemyev";
+import BykovOvsepyan from "../BykovOvsepyan";
 import kosyrev from "../../constants/kosyrev";
 import mironov from "../../constants/Mironov";
+import ovs from "../../constants/Ovsepyan";
 // import Protsenko from '../Protsenko'
 
 const columns = [
@@ -23,11 +25,15 @@ const columns = [
     { field: 'l6', headerName: 'Laba 6', width: 130 },
 ];
 
-const people = { "Косырев": { name: Kosyrev, ...kosyrev }, 
-"Тараканов": { name: Tarakanov,  }, 
-"Никулин": { name: Nikulin, },
-"Миронов": { name: Mironov, ...mironov }, 
-"Артемьев": { name: Artemyev, } };
+const people = {
+    "Косырев": { name: Kosyrev, ...kosyrev },
+    "Тараканов": { name: Tarakanov, },
+    "Никулин": { name: Nikulin, },
+    "Миронов": { name: Mironov, ...mironov },
+    "Артемьев": { name: Artemyev, },
+    "Овсепян": { name: BykovOvsepyan, ...ovs}
+
+};
 
 export default function DataTable() {
     const stateDrawer = React.useState(false);
@@ -44,17 +50,14 @@ export default function DataTable() {
             window.open("/" + name);
         }
     }
+
     return (
         <>
             <div style={{ height: '100vh', width: '100%' }}>
-
                 <DataGrid onCellClick={handleClick} rows={list} columns={columns} pageSize={26} />
             </div>
-            {Content && <Drawer stateDrawer={stateDrawer} width = "50vw">
-
-
+            {Content && <Drawer stateDrawer={stateDrawer} width="50vw">
                 {Content}
             </Drawer>}
-
         </>)
 }
