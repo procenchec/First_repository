@@ -57,7 +57,7 @@ export default function DataTable() {
         const { name } = params.row;
         if (name in people) {
 
-            if (isValidElement(people[name][params.field]))
+            if (isValidElement(people[name][params.field]) || params.field === 'name' )
             {
                 setConent(people[name][params.field])
                 setState(true);

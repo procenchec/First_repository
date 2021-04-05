@@ -9,12 +9,12 @@ import Mironov from './containers/Mironov'
 import List from './containers/Common/List'
 import Nikulin from "./containers/Nikulin";
 import Korneev from "./containers/Korneev";
+import BykovOvsepyan from "./containers/BykovOvsepyan";
 import Godonoga from "./containers/Godonoga";
 import Mikalyuk from "./containers/Mikalyuk";
 import { Photo as Tar } from "./containers/Tarakanov";
 import Leonova from "./containers/Leonova";
 import Sadullaev from "./containers/Sadullaev";
-import BykovOvsepyan from "./containers/BykovOvsepyan";
 import UrlKamleva from "./containers/Kamleva/Url";
 // import Kosyrev from "./containers/Kosyrev";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -23,7 +23,7 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-
+        <BykovOvsepyan />
                 <UrlKamleva />
                 <Switch>
                     <Route path="/Проценко">
