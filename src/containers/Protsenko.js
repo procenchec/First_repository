@@ -16,9 +16,6 @@ function App() {
 
       </Count>
 
-      <TemporaryDrawer>
-
-      </TemporaryDrawer>
     </div>
   );
 }
@@ -41,17 +38,4 @@ function Count() {
     </div>
   );
 }
-
-export default function TemporaryDrawer({ open }) {
-  return (
-    <div>
-      <Drawer
-        anchor="right"
-        open={open}
-        // onClose={() => setState(false)}
-      >
-        <App />
-      </Drawer>
-    </div>
-  );
-}
+export default App;

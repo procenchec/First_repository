@@ -7,8 +7,14 @@ import Drawer from "../../components/Drawer";
 import Nikulin from "../Nikulin";
 import Mironov from "../Mironov";
 import Artemyev from "../Artemyev";
+import BykovOvsepyan from "../BykovOvsepyan";
 import kosyrev from "../../constants/kosyrev";
 import mironov from "../../constants/Mironov";
+import ovs from "../../constants/Ovsepyan";
+import Protsenko from '../Protsenko'
+import protsenko from "../../constants/protsenko";
+import artemyev from "../../constants/artemyev";
+import {isValidElement} from 'react';
 import sheglovAnna from '../../constants/sheglova';
 import Sheglova from '../Sheglova';
 import Rozhkova from "../Rozhkova";
@@ -34,8 +40,12 @@ const people = {
     "Никулин": { name: Nikulin, },
     "Миронов": { name: Mironov, ...mironov },
     "Артемьев": { name: Artemyev, },
+    "Овсепян": { name: BykovOvsepyan, ...ovs},
+
     "Щеглова": { name: Sheglova, ...sheglovAnna },
-    "Рожкова": { name: Rozhkova, ...rozhkova } 
+    "Рожкова": { name: Rozhkova, ...rozhkova },
+    "Артемьев": { name: Artemyev, ...artemyev},
+    "Проценко": {name: Protsenko, ...protsenko} 
 };
 
 export default function DataTable() {
@@ -44,26 +54,26 @@ export default function DataTable() {
     const [Content, setConent] = React.useState();
     console.log(Content);
     const handleClick = (params) => {
-        console.log(params);
         const { name } = params.row;
         if (name in people) {
-            setConent(people[name][params.field])
-            setState(true);
+
+            if (isValidElement(people[name][params.field]))
+            {
+                setConent(people[name][params.field])
+                setState(true);
+            }
         } else {
             window.open("/" + name);
         }
     }
+
     return (
         <>
             <div style={{ height: '100vh', width: '100%' }}>
-
                 <DataGrid onCellClick={handleClick} rows={list} columns={columns} pageSize={26} />
             </div>
             {Content && <Drawer stateDrawer={stateDrawer} width="50vw">
-
-
                 {Content}
             </Drawer>}
-
         </>)
 }
