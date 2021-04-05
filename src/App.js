@@ -23,7 +23,6 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-        <BykovOvsepyan />
                 <UrlKamleva />
                 <Switch>
                     <Route path="/Проценко">
