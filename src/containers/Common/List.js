@@ -48,7 +48,8 @@ const people = {
     "Щеглова": {name: Sheglova, ...sheglovAnna},
     "Рожкова": {name: Rozhkova, ...rozhkova},
     "Артемьев": {name: Artemyev, ...artemyev},
-    "Проценко": {name: Protsenko, ...protsenko}
+    "Проценко": {name: Protsenko, ...protsenko},
+    "Корнеев": {name: Korneev, ...Korneev}
 };
 
 export default function DataTable() {
