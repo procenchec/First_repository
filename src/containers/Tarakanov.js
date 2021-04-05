@@ -38,7 +38,7 @@ function Clicker() {
 export function Photo() {
     const web = (
 
-    <div className="Tarak">
+            <div className="Tarak">
 
                 <h1 title="Грустный кот">Тараканов Н.И.</h1>
                 <Tooltip arrow classes={{tooltip: "tooltip"}} title="Фото грустного кота">
@@ -50,8 +50,8 @@ export function Photo() {
 
                 </Clicker>
 
-    </div>
-)
+            </div>
+        )
     ;
 
     return web;

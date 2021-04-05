@@ -11,20 +11,20 @@ import Nikulin from "./containers/Nikulin";
 import Korneev from "./containers/Korneev";
 import Godonoga from "./containers/Godonoga";
 import Mikalyuk from "./containers/Mikalyuk";
-import { Photo as Tar } from "./containers/Tarakanov";
+import {Photo as Tar} from "./containers/Tarakanov";
 import Leonova from "./containers/Leonova";
 import Sadullaev from "./containers/Sadullaev";
 import BykovOvsepyan from "./containers/BykovOvsepyan";
 import UrlKamleva from "./containers/Kamleva/Url";
 // import Kosyrev from "./containers/Kosyrev";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
 
 function App() {
     return (
         <BrowserRouter>
             <div className="App">
 
-                <UrlKamleva />
+                <UrlKamleva/>
                 <Switch>
                     <Route path="/Проценко">
                         <Procenko/>
@@ -51,40 +51,40 @@ function App() {
                         <List/>
                         <Lobanov>
 
-            </Lobanov>
-            <Rozhkova>
-            </Rozhkova>
+                        </Lobanov>
+                        <Rozhkova>
+                        </Rozhkova>
 
-            <Turov>
+                        <Turov>
 
-            </Turov>
-            <Korneev>
+                        </Turov>
+                        <Korneev>
 
-            </Korneev>
-            <Artemyev>
-                
-            </Artemyev>
-            <Mikalyuk>
+                        </Korneev>
+                        <Artemyev>
 
-            </Mikalyuk>
-            <Nikulin>
+                        </Artemyev>
+                        <Mikalyuk>
 
-            </Nikulin>
-            <Godonoga>
+                        </Mikalyuk>
+                        <Nikulin>
 
-            </Godonoga>
-            <Leonova>
-            </Leonova>
-            <Sadullaev>
-            </Sadullaev>
-            <BykovOvsepyan>
+                        </Nikulin>
+                        <Godonoga>
 
-            </BykovOvsepyan>
-          </Route>
-        </Switch>
-      </div>
-    </BrowserRouter>
-  );
+                        </Godonoga>
+                        <Leonova>
+                        </Leonova>
+                        <Sadullaev>
+                        </Sadullaev>
+                        <BykovOvsepyan>
+
+                        </BykovOvsepyan>
+                    </Route>
+                </Switch>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;
