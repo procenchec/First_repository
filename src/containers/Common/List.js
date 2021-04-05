@@ -20,6 +20,8 @@ import sheglovAnna from '../../constants/sheglova';
 import Sheglova from '../Sheglova';
 import Rozhkova from "../Rozhkova";
 import rozhkova from "../../constants/rozhkova";
+import _ from 'lodash';
+import Korneev from '../../constants/Korneev';
 // import Protsenko from '../Protsenko'
 
 const columns = [
@@ -33,6 +35,7 @@ const columns = [
     {field: 'l5', headerName: 'Laba 5', width: 130},
     {field: 'l6', headerName: 'Laba 6', width: 130},
     {field: 'l7', headerName: 'Laba 7', width: 130},
+    {field: 'l8', headerName: 'Laba 8', width: 130 },
     {field: 'score', headerName: 'Score', width: 130}
 ];
 
