@@ -1,5 +1,3 @@
-// import logo from '../logo.svg';
-import '../App.css';
 import styled from 'styled-components';
 
 function App() {
@@ -22,7 +20,7 @@ function App() {
 const Sheglova = styled.div`
     background-color: rgb(219, 251, 255);
     text-align: center;
-    min-height: 100vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;

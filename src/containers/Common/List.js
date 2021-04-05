@@ -19,6 +19,8 @@ import sheglovAnna from '../../constants/sheglova';
 import Sheglova from '../Sheglova';
 import Rozhkova from "../Rozhkova";
 import rozhkova from "../../constants/rozhkova";
+import _ from 'lodash';
+import Korneev from '../../constants/Korneev';
 // import Protsenko from '../Protsenko'
 
 const columns = [
@@ -32,6 +34,7 @@ const columns = [
     { field: 'l5', headerName: 'Laba 5', width: 130 },
     { field: 'l6', headerName: 'Laba 6', width: 130 },
     { field: 'l7', headerName: 'Laba 7', width: 130 },
+    { field: 'l8', headerName: 'Laba 8', width: 130 },
 ];
 
 const people = {
@@ -45,7 +48,8 @@ const people = {
     "Щеглова": { name: Sheglova, ...sheglovAnna },
     "Рожкова": { name: Rozhkova, ...rozhkova },
     "Артемьев": { name: Artemyev, ...artemyev},
-    "Проценко": {name: Protsenko, ...protsenko} 
+    "Проценко": {name: Protsenko, ...protsenko},
+    "Корнеев": {name: Korneev, ...Korneev}
 };
 
 export default function DataTable() {
@@ -70,7 +74,7 @@ export default function DataTable() {
     return (
         <>
             <div style={{ height: '100vh', width: '100%' }}>
-                <DataGrid onCellClick={handleClick} rows={list} columns={columns} pageSize={26} />
+                <DataGrid onCellClick={handleClick}  rows={_.orderBy(list,['name'],['desc'])} columns={columns} pageSize={26} />
             </div>
             {Content && <Drawer stateDrawer={stateDrawer} width="50vw">
                 {Content}
