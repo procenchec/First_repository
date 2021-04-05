@@ -19,6 +19,7 @@ import sheglovAnna from '../../constants/sheglova';
 import Sheglova from '../Sheglova';
 import Rozhkova from "../Rozhkova";
 import rozhkova from "../../constants/rozhkova";
+import Korneev from '../../constants/Korneev';
 // import Protsenko from '../Protsenko'
 
 const columns = [
@@ -45,7 +46,8 @@ const people = {
     "Щеглова": { name: Sheglova, ...sheglovAnna },
     "Рожкова": { name: Rozhkova, ...rozhkova },
     "Артемьев": { name: Artemyev, ...artemyev},
-    "Проценко": {name: Protsenko, ...protsenko} 
+    "Проценко": {name: Protsenko, ...protsenko},
+    "Корнеев": {name: Korneev, ...Korneev}
 };
 
 export default function DataTable() {
