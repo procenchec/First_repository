@@ -1,25 +1,6 @@
-// import logo from '../logo.svg';
 
 import React, { useState } from 'react';
 import styled from 'styled-components';
-
-
-function Example() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <div>
-      <p> {count} </p>
-      <button class="button" onClick={() => setCount(count - 1)}>
-        Назад
-      </button> &nbsp;
-
-      <button class="button" onClick={() => setCount(count + 1)}>
-        Вперед
-      </button>
-    </div>
-  );
-}
 
 function App() {
   return (
@@ -28,7 +9,6 @@ function App() {
             
         Камлёва Н.С. Б-ИСиТ-41
 
-     <Example />
     </Kaml>
   );
 }
