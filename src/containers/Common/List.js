@@ -25,6 +25,7 @@ import korneev from '../../constants/Korneev';
 import { artemyev as artemyevName } from '../../constants/results';
 import { korneev as korneevName } from '../../constants/results';
 // import Protsenko from '../Protsenko'
+import tarakanoff from '../../constants/tarakanoff';
 
 const columns = [
     //{ field: 'id', headerName: 'ID', width: 70 },
