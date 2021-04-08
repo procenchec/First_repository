@@ -26,6 +26,7 @@ import { artemyev as artemyevName } from '../../constants/results';
 import { korneev as korneevName } from '../../constants/results';
 // import Protsenko from '../Protsenko'
 import tarakanoff from '../../constants/tarakanoff';
+import nikulin from "../../constants/nikulin";
 
 const columns = [
     //{ field: 'id', headerName: 'ID', width: 70 },
@@ -45,7 +46,7 @@ const columns = [
 const people = {
     "Косырев": {name: Kosyrev, ...kosyrev},
     "Тараканов": {name: Tarakanov, ...tarakanoff},
-    "Никулин": {name: Nikulin,},
+    "Никулин": {name: Nikulin, ...nikulin},
     "Миронов": {name: Mironov, ...mironov},
     "Овсепян": {name: BykovOvsepyan, ...ovs},
     "Щеглова": {name: Sheglova, ...sheglovAnna},
