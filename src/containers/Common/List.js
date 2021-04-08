@@ -21,12 +21,11 @@ import Korneev from "../Korneev";
 import Rozhkova from "../Rozhkova";
 import rozhkova from "../../constants/rozhkova";
 import _ from 'lodash';
-import Korneev from '../../constants/Korneev';
+import korneev from '../../constants/Korneev';
 import turov from '../../constants/turov';
 import Turov from "../Turov";
 import leonova from '../../constants/leonova';
 import Leonova from "../Leonova";
-import korneev from '../../constants/Korneev';
 import { artemyev as artemyevName } from '../../constants/results';
 import { korneev as korneevName } from '../../constants/results';
 // import Protsenko from '../Protsenko'
