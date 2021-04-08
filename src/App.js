@@ -2,12 +2,12 @@ import './App.css';
 import Sheglova from './containers/Sheglova'
 import Procenko from './containers/Protsenko'
 import Artemyev from './containers/Artemyev'
+import Belyavskii from './containers/Belyavskii'
 import Lobanov from './containers/Lobanov'
 import Rozhkova from './containers/Rozhkova'
 import Kamleva from './containers/Kamleva'
 import Turov from './containers/Turov'
 import Mironov from './containers/Mironov'
-import List from './containers/Common/List'
 import Nikulin from "./containers/Nikulin";
 import Korneev from "./containers/Korneev";
 import Godonoga from "./containers/Godonoga";
@@ -29,7 +29,6 @@ function App() {
             <Artemyev />
           </Route>
           <Route path="/">
-            <List />
             <Sheglova>
 
             </Sheglova>
@@ -51,11 +50,14 @@ function App() {
             <Mikalyuk>
 
             </Mikalyuk>
+
+              <Belyavskii>
+              </Belyavskii>
+
             <Nikulin>
 
             </Nikulin>
             <Godonoga>
-
             </Godonoga>
           </Route>
         </Switch>
