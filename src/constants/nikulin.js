@@ -15,8 +15,8 @@ export default {
     l2: cloneElement(<Iframe></Iframe>, {src: lr2}),
     l3: cloneElement(<Iframe></Iframe>, {src: lr3}),
     l4: cloneElement(<Iframe></Iframe>, {src: lr4}),
-    l5: cloneElement(<Iframe></Iframe>, {src: lr5}),
-    l6: cloneElement(<Iframe></Iframe>, {src: lr6}),
-    l7: cloneElement(<Iframe></Iframe>, {src: lr7}),
-    l8: cloneElement(<Iframe></Iframe>, {src: lr8}),
+    l5: "-",
+    l6: "-",
+    l7: "-",
+    l8: "-",
 }
