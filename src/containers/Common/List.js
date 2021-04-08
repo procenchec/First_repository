@@ -22,9 +22,15 @@ import Rozhkova from "../Rozhkova";
 import rozhkova from "../../constants/rozhkova";
 import _ from 'lodash';
 import korneev from '../../constants/Korneev';
+import turov from '../../constants/turov';
+import Turov from "../Turov";
+import leonova from '../../constants/leonova';
+import Leonova from "../Leonova";
 import { artemyev as artemyevName } from '../../constants/results';
 import { korneev as korneevName } from '../../constants/results';
 // import Protsenko from '../Protsenko'
+import tarakanoff from '../../constants/tarakanoff';
+import nikulin from "../../constants/nikulin";
 
 const columns = [
     //{ field: 'id', headerName: 'ID', width: 70 },
@@ -44,7 +50,7 @@ const columns = [
 const people = {
     "Косырев": {name: Kosyrev, ...kosyrev},
     "Тараканов": {name: Tarakanov, ...tarakanoff},
-    "Никулин": {name: Nikulin,},
+    "Никулин": {name: Nikulin, ...nikulin},
     "Миронов": {name: Mironov, ...mironov},
     "Овсепян": {name: BykovOvsepyan, ...ovs},
     "Щеглова": {name: Sheglova, ...sheglovAnna},
@@ -52,6 +58,13 @@ const people = {
     [artemyevName]: {name: Artemyev, ...artemyev},
     "Проценко": {name: Protsenko, ...protsenko},
     [korneevName]: {name: Korneev, ...korneev},
+
+
+
+
+    
+    "Туров": {name: Turov, ...turov},
+    "Леонова": {name: Leonova, ...leonova}
 };
 
 export default function DataTable() {
