@@ -11,6 +11,7 @@ import protsenko from "./protsenko"
 import {isValidElement} from 'react';
 import rozhkovaLabs from './rozhkova';
 import tarLabs from './tarakanoff';
+import nikulin from "./nikulin";
 
 let i = 0;
 
@@ -41,7 +42,7 @@ const list = [gen('Камлёва', 'KamljovaNS@studklg.ru', kamlevaLabs),
     gen('Корнеев', '', korneevLabs),
     gen('Лобанов', '', lobanovLabs),
     gen('Щеглова', '', sheglovaLabs),
-    gen('Никулин', ''),
+    gen('Никулин', 'NikulinVV@studklg.ru', nikulin),
     gen('Садулаев', ''),
     gen('Овсепян', 'OvsepyanAM@studklg.ru', OvsepyanLabs),
     gen('Быков', ''),

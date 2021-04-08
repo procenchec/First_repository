@@ -22,6 +22,7 @@ import Rozhkova from "../Rozhkova";
 import rozhkova from "../../constants/rozhkova";
 import _ from 'lodash';
 import Korneev from '../../constants/Korneev';
+import nikulin from '../../constants/nikulin';
 // import Protsenko from '../Protsenko'
 
 const columns = [
@@ -42,7 +43,7 @@ const columns = [
 const people = {
     "Косырев": {name: Kosyrev, ...kosyrev},
     "Тараканов": {name: Tarakanov, ...tarakanoff},
-    "Никулин": {name: Nikulin,},
+    "Никулин": {name: Nikulin, ...nikulin},
     "Миронов": {name: Mironov, ...mironov},
     "Овсепян": {name: BykovOvsepyan, ...ovs},
     "Щеглова": {name: Sheglova, ...sheglovAnna},
