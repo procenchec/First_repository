@@ -12,43 +12,46 @@ import Korneev from "./containers/Korneev";
 import BykovOvsepyan from "./containers/BykovOvsepyan";
 import Godonoga from "./containers/Godonoga";
 import Mikalyuk from "./containers/Mikalyuk";
-import {Photo as Tar} from "./containers/Tarakanov";
+import { Photo as Tar } from "./containers/Tarakanov";
 import Leonova from "./containers/Leonova";
 import Sadullaev from "./containers/Sadullaev";
 import UrlKamleva from "./containers/Kamleva/Url";
+
+//import db from './db/db';
+
 // import Kosyrev from "./containers/Kosyrev";
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
     return (
         <BrowserRouter>
             <div className="App">
 
-                <UrlKamleva/>
+                <UrlKamleva />
                 <Switch>
                     <Route path="/Проценко">
-                        <Procenko/>
+                        <Procenko />
                     </Route>
                     <Route path="/Артемьев">
-                        <Artemyev/>
+                        <Artemyev />
                     </Route>
                     <Route path="/Тараканов">
-                        <Tar/>
+                        <Tar />
                     </Route>
                     <Route path="/Корнеев">
-                        <Korneev/>
+                        <Korneev />
                     </Route>
                     <Route path="/Лобанов">
-                        <Lobanov/>
+                        <Lobanov />
                     </Route>
                     <Route path="/Щеглова">
-                        <Sheglova/>
+                        <Sheglova />
                     </Route>
                     <Route path="/Никулин">
-                        <Nikulin/>
+                        <Nikulin />
                     </Route>
                     <Route path="/">
-                        <List/>
+                        <List />
                         <Lobanov>
 
                         </Lobanov>
