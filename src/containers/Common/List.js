@@ -22,6 +22,10 @@ import Rozhkova from "../Rozhkova";
 import rozhkova from "../../constants/rozhkova";
 import _ from 'lodash';
 import Korneev from '../../constants/Korneev';
+import turov from '../../constants/turov';
+import Turov from "../Turov";
+import leonova from '../../constants/leonova';
+import Leonova from "../Leonova";
 // import Protsenko from '../Protsenko'
 
 const columns = [
@@ -49,7 +53,14 @@ const people = {
     "Рожкова": {name: Rozhkova, ...rozhkova},
     "Артемьев": {name: Artemyev, ...artemyev},
     "Проценко": {name: Protsenko, ...protsenko},
-    "Корнеев": {name: Korneev, ...Korneev}
+    "Корнеев": {name: Korneev, ...Korneev},
+
+
+
+
+    
+    "Туров": {name: Turov, ...turov},
+    "Леонова": {name: Leonova, ...leonova}
 };
 
 export default function DataTable() {

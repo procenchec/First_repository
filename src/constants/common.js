@@ -10,7 +10,13 @@ import OvsepyanLabs from './Ovsepyan';
 import protsenko from "./protsenko"
 import {isValidElement} from 'react';
 import rozhkovaLabs from './rozhkova';
-import tarLabs from './tarakanoff';
+import tarLabs from './tarakanoff'
+
+
+
+
+import turovlab from './turov'
+import leonovalab from './leonova';
 
 let i = 0;
 
@@ -47,7 +53,7 @@ const list = [gen('Камлёва', 'KamljovaNS@studklg.ru', kamlevaLabs),
     gen('Быков', ''),
     gen('Микалюк', ''),
     gen('Годонога', ''),
-    gen('Туров', ''),
-    gen('Леонова', '')];
+    gen('Туров', 'TurovSV@studklg.ru', turovlab),
+    gen('Леонова', 'LeonovaVD@studklg.ru', leonovalab)];
 
 export default list
