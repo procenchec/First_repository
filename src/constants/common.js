@@ -11,6 +11,7 @@ import protsenko from "./protsenko"
 import {isValidElement} from 'react';
 import rozhkovaLabs from './rozhkova';
 import tarLabs from './tarakanoff';
+import { results, maxBall } from './results';
 import nikulin from "./nikulin";
 
 let i = 0;
@@ -19,15 +20,32 @@ export const gen = (name, email, labs) => {
 
     i++;
     const newLabs = {...labs};
-    const totalLabs = Object.keys(newLabs).length * 8;
+
+    let score = 0;
+    for (const lab in labs)
+    {
+        let currentLabScore = 0;
+        if (results[name])
+        {
+            currentLabScore = (results[name][lab] * maxBall) / 100;
+        }
+        // console.log(currentLabScore);
+        // console.log(results[lab])
+        console.log(name, lab)
+        score = score + currentLabScore;
+    }
+    
+    if (results[name])
+    {
+        score = score + (results[name].bonus)
+    }
     for (var prop in newLabs) {
 
         if (isValidElement(newLabs[prop]))
             newLabs[prop] = "+";
     }
 
-
-    return {name, email, id: i, ...newLabs, score: totalLabs}
+    return {name, email, id: i, ...newLabs, score}
 }
 
 
