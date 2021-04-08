@@ -16,7 +16,6 @@ function Example() {
                 Вперед
             </button>
         </div>
-
     );
 }
 
