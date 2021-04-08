@@ -12,59 +12,60 @@ import Nikulin from "./containers/Nikulin";
 import Korneev from "./containers/Korneev";
 import Godonoga from "./containers/Godonoga";
 import Mikalyuk from "./containers/Mikalyuk";
+import List from './containers/Common/List';
+import UrlKamleva from './containers/Kamleva/Url';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 
 function App() {
-  return (
-    <BrowserRouter>
-      <div className="App">
-        <Switch>
-          <Route path="/Камлёва">
-            <Kamleva />
-          </Route>
-          <Route path="/Проценко">
-            <Procenko />
-          </Route>
-          <Route path="/Артемьев">
-            <Artemyev />
-          </Route>
-          <Route path="/">
-            <Sheglova>
+    return (
+        <BrowserRouter>
+            <div className="App">
+                <UrlKamleva />
+                <Switch>
+                    <Route path="/Камлёва">
+                        <Kamleva />
+                    </Route>
+                    <Route path="/Проценко">
+                        <Procenko />
+                    </Route>
+                    <Route path="/Артемьев">
+                        <Artemyev />
+                    </Route>
+                    <Route path="/">
+                        <List />
 
-            </Sheglova>
+                        <Lobanov>
 
-            <Lobanov>
+                        </Lobanov>
+                        <Rozhkova>
+                        </Rozhkova>
 
-            </Lobanov>
-            <Rozhkova>
-            </Rozhkova>
+                        <Turov>
 
-            <Turov>
+                        </Turov>
+                        <Korneev>
+                        </Korneev>
+                        <Mironov>
 
-            </Turov>
-            <Korneev>
-            </Korneev>
-            <Mironov>
+                        </Mironov>
+                        <Mikalyuk>
 
-            </Mironov>
-            <Mikalyuk>
+                        </Mikalyuk>
 
-            </Mikalyuk>
+                        <Belyavskii>
+                        </Belyavskii>
 
-              <Belyavskii>
-              </Belyavskii>
+                        <Nikulin>
 
-            <Nikulin>
-
-            </Nikulin>
-            <Godonoga>
-            </Godonoga>
-          </Route>
-        </Switch>
-      </div>
-    </BrowserRouter>
-  );
+                        </Nikulin>
+                        <Godonoga>
+                        </Godonoga>
+                    </Route>
+                </Switch>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;
