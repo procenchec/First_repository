@@ -10,7 +10,6 @@ import lr8 from "../assets/NikulinN/8.pdf";
 import {cloneElement} from "react";
 import React from "react";
 
-
 export default {
     l1: <Iframe src={lr1}></Iframe>,
     l2: cloneElement(<Iframe></Iframe>, {src: lr2}),
