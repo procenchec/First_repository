@@ -2,92 +2,68 @@ import './App.css';
 import Sheglova from './containers/Sheglova'
 import Procenko from './containers/Protsenko'
 import Artemyev from './containers/Artemyev'
+import Belyavskii from './containers/Belyavskii'
 import Lobanov from './containers/Lobanov'
 import Rozhkova from './containers/Rozhkova'
+import Kamleva from './containers/Kamleva'
 import Turov from './containers/Turov'
 import Mironov from './containers/Mironov'
-import List from './containers/Common/List'
 import Nikulin from "./containers/Nikulin";
 import Korneev from "./containers/Korneev";
-import BykovOvsepyan from "./containers/BykovOvsepyan";
 import Godonoga from "./containers/Godonoga";
 import Mikalyuk from "./containers/Mikalyuk";
-import { Photo as Tar } from "./containers/Tarakanov";
-import Leonova from "./containers/Leonova";
-import Sadullaev from "./containers/Sadullaev";
-import UrlKamleva from "./containers/Kamleva/Url";
-
-//import db from './db/db';
-
-// import Kosyrev from "./containers/Kosyrev";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
-    return (
-        <BrowserRouter>
-            <div className="App">
+  return (
+    <BrowserRouter>
+      <div className="App">
+        <Switch>
+          <Route path="/Камлёва">
+            <Kamleva />
+          </Route>
+          <Route path="/Проценко">
+            <Procenko />
+          </Route>
+          <Route path="/Артемьев">
+            <Artemyev />
+          </Route>
+          <Route path="/">
+            <Sheglova>
 
-                <UrlKamleva />
-                <Switch>
-                    <Route path="/Проценко">
-                        <Procenko />
-                    </Route>
-                    <Route path="/Артемьев">
-                        <Artemyev />
-                    </Route>
-                    <Route path="/Тараканов">
-                        <Tar />
-                    </Route>
-                    <Route path="/Корнеев">
-                        <Korneev />
-                    </Route>
-                    <Route path="/Лобанов">
-                        <Lobanov />
-                    </Route>
-                    <Route path="/Щеглова">
-                        <Sheglova />
-                    </Route>
-                    <Route path="/Никулин">
-                        <Nikulin />
-                    </Route>
-                    <Route path="/">
-                        <List />
-                        <Lobanov>
+            </Sheglova>
 
-                        </Lobanov>
-                        <Rozhkova>
-                        </Rozhkova>
+            <Lobanov>
 
-                        <Turov>
+            </Lobanov>
+            <Rozhkova>
+            </Rozhkova>
 
-                        </Turov>
-                        <Korneev>
+            <Turov>
 
-                        </Korneev>
-                        <Artemyev>
+            </Turov>
+            <Korneev>
+            </Korneev>
+            <Mironov>
 
-                        </Artemyev>
-                        <Mikalyuk>
+            </Mironov>
+            <Mikalyuk>
 
-                        </Mikalyuk>
-                        <Nikulin>
+            </Mikalyuk>
 
-                        </Nikulin>
-                        <Godonoga>
+              <Belyavskii>
+              </Belyavskii>
 
-                        </Godonoga>
-                        <Leonova>
-                        </Leonova>
-                        <Sadullaev>
-                        </Sadullaev>
-                        <BykovOvsepyan>
+            <Nikulin>
 
-                        </BykovOvsepyan>
-                    </Route>
-                </Switch>
-            </div>
-        </BrowserRouter>
-    );
+            </Nikulin>
+            <Godonoga>
+            </Godonoga>
+          </Route>
+        </Switch>
+      </div>
+    </BrowserRouter>
+  );
 }
 
 export default App;

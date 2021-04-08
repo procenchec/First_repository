@@ -17,10 +17,13 @@ import artemyev from "../../constants/artemyev";
 import {isValidElement} from 'react';
 import sheglovAnna from '../../constants/sheglova';
 import Sheglova from '../Sheglova';
+import Korneev from "../Korneev";
 import Rozhkova from "../Rozhkova";
 import rozhkova from "../../constants/rozhkova";
 import _ from 'lodash';
-import Korneev from '../../constants/Korneev';
+import korneev from '../../constants/Korneev';
+import { artemyev as artemyevName } from '../../constants/results';
+import { korneev as korneevName } from '../../constants/results';
 // import Protsenko from '../Protsenko'
 
 const columns = [
@@ -39,23 +42,23 @@ const columns = [
 ];
 
 const people = {
-    "Косырев": { name: Kosyrev, ...kosyrev },
-    "Тараканов": { name: Tarakanov, },
-    "Никулин": { name: Nikulin, },
-    "Миронов": { name: Mironov, ...mironov },
-    "Овсепян": { name: BykovOvsepyan, ...ovs},
-    "Щеглова": { name: Sheglova, ...sheglovAnna },
-    "Рожкова": { name: Rozhkova, ...rozhkova },
-    "Артемьев": { name: Artemyev, ...artemyev},
+    "Косырев": {name: Kosyrev, ...kosyrev},
+    "Тараканов": {name: Tarakanov, ...tarakanoff},
+    "Никулин": {name: Nikulin,},
+    "Миронов": {name: Mironov, ...mironov},
+    "Овсепян": {name: BykovOvsepyan, ...ovs},
+    "Щеглова": {name: Sheglova, ...sheglovAnna},
+    "Рожкова": {name: Rozhkova, ...rozhkova},
+    [artemyevName]: {name: Artemyev, ...artemyev},
     "Проценко": {name: Protsenko, ...protsenko},
-    "Корнеев": {name: Korneev, ...Korneev}
+    [korneevName]: {name: Korneev, ...korneev},
 };
 
 export default function DataTable() {
     const stateDrawer = React.useState(false);
     const [state, setState] = stateDrawer;
     const [Content, setConent] = React.useState();
-    console.log(Content);
+
     const handleClick = (params) => {
         const { name } = params.row;
         if (name in people) {
