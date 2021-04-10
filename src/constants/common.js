@@ -31,7 +31,6 @@ export const gen = (name, email, labs) => {
         }
         // console.log(currentLabScore);
         // console.log(results[lab])
-        console.log(name, lab)
         score = score + currentLabScore;
     }
     

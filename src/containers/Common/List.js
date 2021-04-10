@@ -23,6 +23,7 @@ import rozhkova from "../../constants/rozhkova";
 import _ from 'lodash';
 import korneev from '../../constants/Korneev';
 import { artemyev as artemyevName } from '../../constants/results';
+import { protsenko as protsenkoName } from '../../constants/results';
 import { korneev as korneevName } from '../../constants/results';
 // import Protsenko from '../Protsenko'
 import tarakanoff from '../../constants/tarakanoff';
