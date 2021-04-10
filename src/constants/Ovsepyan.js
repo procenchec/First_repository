@@ -10,4 +10,7 @@ export default {
     l2: <Iframe src={lab2}></Iframe>,
     l3: <Iframe src={lab3}></Iframe>,
     l4: <Iframe src={lab4}></Iframe>,
+    l5: "+",
+    l6: "+",
+    
 }
