@@ -21,18 +21,28 @@ import imgo from "./assets/Ovsepyan/img.jpg";
 
 
 const Input = styled(Lb7)`
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: bolder;
-  color: rgb(255, 255, 255);
+width: 15%;
+
+> div {
+  ::after {
+  border-bottom: 2px solid white !important;
+    }
+
+    ::before {
+  border-bottom: 1px solid white !important;
+    }
+}
 `;
 
 const Header = styled.div`
-background-image: url(${imgo});
-  text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  font-weight: 900;
-  color: rgb(255, 255, 255);
+  font-size: 230%;
+  color: white;
+  
+  a {
+    color: white;
+  }
+
+  background-image: url(${imgo});  
   min-height: 15vh;
   display: flex;
   flex-direction: column;
@@ -57,9 +67,9 @@ function App() {
           </Route>
           <Route path="/">
             <Header>
-              <Input />              
+              <Input />
               <a href="https://protsenkoweb.herokuapp.com/">
-                https://protsenkoweb.herokuapp.com/
+                GO TO WEB
               </a>
             </Header>
 
