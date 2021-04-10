@@ -32,7 +32,6 @@ import { korneev as korneevName } from '../../constants/results';
 import tarakanoff from '../../constants/tarakanoff';
 import nikulin from "../../constants/nikulin";
 import { useEffect } from 'react';
-var jc = require('json-config-reader');
 
 const columns = [
     //{ field: 'id', headerName: 'ID', width: 70 },
