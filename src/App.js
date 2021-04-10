@@ -18,12 +18,13 @@ import BykovOvsepyan from "./containers/BykovOvsepyan";
 import UrlKamleva from "./containers/Kamleva/Url";
 // import Kosyrev from "./containers/Kosyrev";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Lb7 from './containers/Common/LB7';
 
 function App() {
     return (
         <BrowserRouter>
             <div className="App">
-
+                <Lb7 />
                 <UrlKamleva />
                 <Switch>
                     <Route path="/Проценко">
