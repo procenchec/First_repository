@@ -20,25 +20,27 @@ import Lb7 from "./containers/Common/LB7";
 import LB8 from "./containers/Common/LB8";
 import styled from "styled-components";
 import list from './constants/common';
+import imgo from "./assets/Ovsepyan/img.jpg";
+
 
 const Input = styled(Lb7)`
   font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  font-weight: 900;
+  font-style: bolder;
+  color: rgb(255, 255, 255);
 `;
 
 const Header = styled.div`
-    background-color: rgb(21, 150, 205);
-  text-align: center;
+background-image: url(${imgo});
+  text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
   font-weight: 900;
-  color: rgb(20, 19, 89);
-  min-height: 6vh;
+  color: rgb(255, 255, 255);
+  min-height: 15vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  font-stretch: ultra-expanded;
+  align-items: center;
 `;
 
 

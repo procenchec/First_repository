@@ -13,8 +13,8 @@ function Lb7({ value, setValue, ...rest }) {
   }
 
   return (
-    <FormControl {...rest}>
-      <InputLabel id="demo-simple-select-helper-label">список</InputLabel>
+    <FormControl {...props}>
+      <InputLabel id="demo-simple-select-helper-label">СПИСОК</InputLabel>
       <Select
         labelId="demo-simple-select-helper-label"
         id="demo-simple-select-helper"
@@ -25,7 +25,7 @@ function Lb7({ value, setValue, ...rest }) {
           return <MenuItem value={item.name}>{item.name}</MenuItem>;
         })}
 
-        
+
       </Select>
     </FormControl>
   );

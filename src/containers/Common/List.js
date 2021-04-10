@@ -44,6 +44,7 @@ const columns = [
     { field: 'l6', headerName: 'Laba 6', width: 130 },
     { field: 'l7', headerName: 'Laba 7', width: 130 },
     { field: 'l8', headerName: 'Laba 8', width: 130 },
+    { field: 'bonus', headerName: 'Bonus', width: 130 },
     { field: 'score', headerName: 'Score', width: 130 }
 ];
 
