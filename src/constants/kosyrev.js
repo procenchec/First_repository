@@ -5,6 +5,7 @@ import lab3 from "../assets/Kosyrev/lab3.pdf";
 import lab4 from "../assets/Kosyrev/lab4.pdf";
 import lab5 from "../assets/Kosyrev/lab5.pdf";
 import lab6 from "../assets/Kosyrev/lab6.pdf";
+import lab7 from "../assets/Kosyrev/lab7.pdf";
 import { cloneElement } from "react";
 import React from "react";
 export default {
@@ -14,4 +15,5 @@ export default {
     l4: cloneElement(<Iframe></Iframe>, { src: lab4 }),
     l5: cloneElement(<Iframe></Iframe>, { src: lab5 }),
     l6: cloneElement(<Iframe></Iframe>, { src: lab6 }),
+    l7: cloneElement(<Iframe></Iframe>, { src: lab7 }),
 }
