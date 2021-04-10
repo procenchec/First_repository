@@ -15,7 +15,7 @@ import { results, maxBall } from './results';
 import nikulin from "./nikulin";
 import turovlab from './turov'
 import leonovalab from './leonova';
-import { gridColumnsTotalWidthSelector } from '@material-ui/data-grid';
+
 
 let i = 0;
 

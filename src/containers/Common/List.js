@@ -27,6 +27,7 @@ import Turov from "../Turov";
 import leonova from '../../constants/leonova';
 import Leonova from "../Leonova";
 import { artemyev as artemyevName } from '../../constants/results';
+import { protsenko as protsenkoName } from '../../constants/results';
 import { korneev as korneevName } from '../../constants/results';
 // import Protsenko from '../Protsenko'
 import tarakanoff from '../../constants/tarakanoff';
