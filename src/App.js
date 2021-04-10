@@ -19,7 +19,6 @@ import Lb7 from "./containers/Common/LB7";
 import styled from "styled-components";
 
 const Input = styled(Lb7)`
-  
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
   font-weight: 900;
