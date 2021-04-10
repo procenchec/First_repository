@@ -10,9 +10,12 @@ import OvsepyanLabs from './Ovsepyan';
 import protsenko from "./protsenko"
 import {isValidElement} from 'react';
 import rozhkovaLabs from './rozhkova';
-import tarLabs from './tarakanoff';
+import tarLabs from './tarakanoff'
 import { results, maxBall } from './results';
 import nikulin from "./nikulin";
+import turovlab from './turov'
+import leonovalab from './leonova';
+
 
 let i = 0;
 
@@ -27,16 +30,23 @@ export const gen = (name, email, labs) => {
         let currentLabScore = 0;
         if (results[name])
         {
-            currentLabScore = (results[name][lab] * maxBall) / 100;
+            //console.log(results[name][lab]);
+            if(results[name][lab] != undefined)
+                currentLabScore = (results[name][lab] * maxBall) / 100;
+            else
+            currentLabScore = 0;
         }
         // console.log(currentLabScore);
         // console.log(results[lab])
+        // console.log(name, lab)
         score = score + currentLabScore;
+        //console.log(score);
     }
     
     if (results[name])
     {
-        score = score + (results[name].bonus)
+        if(results[name].bonus != undefined)
+            score = score + (results[name].bonus)
     }
     for (var prop in newLabs) {
 
@@ -65,7 +75,7 @@ const list = [gen('Камлёва', 'KamljovaNS@studklg.ru', kamlevaLabs),
     gen('Быков', ''),
     gen('Микалюк', ''),
     gen('Годонога', ''),
-    gen('Туров', ''),
-    gen('Леонова', '')];
+    gen('Туров', 'TurovSV@studklg.ru', turovlab),
+    gen('Леонова', 'LeonovaVD@studklg.ru', leonovalab)];
 
 export default list

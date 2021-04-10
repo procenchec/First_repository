@@ -15,12 +15,14 @@ import Mikalyuk from "./containers/Mikalyuk";
 import List from './containers/Common/List';
 import UrlKamleva from './containers/Kamleva/Url';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Lb7 from './containers/Common/LB7';
 
 
 function App() {
     return (
         <BrowserRouter>
             <div className="App">
+                <Lb7 />
                 <UrlKamleva />
                 <Switch>
                     <Route path="/Камлёва">
