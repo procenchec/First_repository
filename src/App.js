@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState } from "react";
 import Sheglova from "./containers/Sheglova";
 import Procenko from "./containers/Protsenko";
 import Artemyev from "./containers/Artemyev";
@@ -16,7 +17,9 @@ import List from "./containers/Common/List";
 import UrlKamleva from "./containers/Kamleva/Url";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Lb7 from "./containers/Common/LB7";
+import LB8 from "./containers/Common/LB8";
 import styled from "styled-components";
+import list from './constants/common';
 import imgo from "./assets/Ovsepyan/img.jpg";
 
 
@@ -50,48 +53,62 @@ const Header = styled.div`
   align-items: center;
 `;
 
+
 function App() {
-  return (
-    <BrowserRouter>
-      <div className="App">
-        <UrlKamleva />
-        <Switch>
-          <Route path="/Камлёва">
-            <Kamleva />
-          </Route>
-          <Route path="/Проценко">
-            <Procenko />
-          </Route>
-          <Route path="/Артемьев">
-            <Artemyev />
-          </Route>
-          <Route path="/">
-            <Header>
-              <Input />
-              <a href="https://protsenkoweb.herokuapp.com/">
-                GO TO WEB
-              </a>
-            </Header>
+    const [value, setValue] = useState();
+    const [removedPeople, setRemovedPeople] = useState([{ name: 'Белявский' }]);
 
-            <List />
+    
+    const [students, setStudents] = useState(list);
 
-            <Lobanov></Lobanov>
-            <Rozhkova></Rozhkova>
 
-            <Turov></Turov>
-            <Korneev></Korneev>
-            <Mironov></Mironov>
-            <Mikalyuk></Mikalyuk>
+    const handleClick = () => {
+        const newPeople = [...removedPeople, { name: value }];
+        setRemovedPeople(newPeople);
+    }
 
-            <Belyavskii></Belyavskii>
+    return (
+        <BrowserRouter>
+            <div className="App">
+                <UrlKamleva />
 
-            <Nikulin></Nikulin>
-            <Godonoga></Godonoga>
-          </Route>
-        </Switch>
-      </div>
-    </BrowserRouter>
-  );
+                <Switch>
+                    <Route path="/Камлёва">
+                        <Kamleva />
+                    </Route>
+                    <Route path="/Проценко">
+                        <Procenko />
+                    </Route>
+                    <Route path="/Артемьев">
+                        <Artemyev />
+                    </Route>
+                    <Route path="/">
+                        <Header>
+                            <Input value={value} setValue={setValue} />
+                            <LB8 handleClick={handleClick} />
+                            <a href="https://protsenkoweb.herokuapp.com/">GO TO WEB</a>
+                        </Header>
+
+                        <List list={students} removedPeople={removedPeople} />
+
+                        <Lobanov></Lobanov>
+                        <Rozhkova></Rozhkova>
+
+                        <Turov></Turov>
+                        <Korneev></Korneev>
+                        <Mironov></Mironov>
+                        <Mikalyuk></Mikalyuk>
+
+                        <Belyavskii></Belyavskii>
+
+                        <Nikulin></Nikulin>
+                        <Godonoga></Godonoga>
+                    </Route>
+                </Switch>
+            </div>
+        </BrowserRouter>
+
+    );
 }
 
 export default App;

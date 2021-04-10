@@ -12,5 +12,6 @@ export default {
     l4: cloneElement(<Iframe></Iframe>, { src: lab4 }),
     l5: "+",
     l6: "+",
-    l7: "+"
+    l7: "+",
+    l8: "+"
 }

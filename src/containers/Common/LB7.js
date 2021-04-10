@@ -11,22 +11,20 @@ const InputLabelStyle = styled(InputLabel)`
   color: white !important;
 `;
 
-function Lb7(props) {
-  const [value, setValue] = useState();
+function Lb7({ value, setValue, ...rest }) {
 
-  // const handleChange = (params, p) => {
-  //     console.log(params);
-  //     console.log(p);
-  // }
+  const handleChange = (params, item) => {
+    setValue(item.props.value)
+  }
 
   return (
-    <FormControl {...props}>
+    <FormControl {...rest}>
       <InputLabelStyle id="demo-simple-select-helper-label">СПИСОК</InputLabelStyle>
       <Select
         labelId="demo-simple-select-helper-label"
         id="demo-simple-select-helper"
         value={value}
-      // onChange={handleChange}
+        onChange={handleChange}
       >
         {list.map((item) => {
           return <MenuItem value={item.name}>{item.name}</MenuItem>;
