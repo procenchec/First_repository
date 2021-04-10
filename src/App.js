@@ -23,6 +23,7 @@ function App() {
         <BrowserRouter>
             <div className="App">
                 <Lb7 />
+                <LB8 />
                 <UrlKamleva />
                 <Switch>
                     <Route path="/Камлёва">
