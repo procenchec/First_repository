@@ -16,7 +16,7 @@ function Lb7(props) {
 
   return (
     <FormControl {...props}>
-      <InputLabel id="demo-simple-select-helper-label">список</InputLabel>
+      <InputLabel id="demo-simple-select-helper-label">СПИСОК</InputLabel>
       <Select
         labelId="demo-simple-select-helper-label"
         id="demo-simple-select-helper"
