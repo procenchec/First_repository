@@ -1,4 +1,3 @@
-import list from '../../constants/common';
 import { DataGrid } from '@material-ui/data-grid';
 import React from "react";
 import Kosyrev from "../Kosyrev";
@@ -32,7 +31,6 @@ import { korneev as korneevName } from '../../constants/results';
 // import Protsenko from '../Protsenko'
 import tarakanoff from '../../constants/tarakanoff';
 import nikulin from "../../constants/nikulin";
-import { useEffect } from 'react';
 
 const columns = [
     //{ field: 'id', headerName: 'ID', width: 70 },
@@ -58,36 +56,13 @@ const people = {
     "Щеглова": { name: Sheglova, ...sheglovAnna },
     "Рожкова": { name: Rozhkova, ...rozhkova },
     [artemyevName]: { name: Artemyev, ...artemyev },
-    "Проценко": { name: Protsenko, ...protsenko },
+    [protsenkoName]: { name: Protsenko, ...protsenko },
     [korneevName]: { name: Korneev, ...korneev },
-
-
-
-
-
     "Туров": { name: Turov, ...turov },
     "Леонова": { name: Leonova, ...leonova }
 };
 
-function readTextFile(file)
-{
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function ()
-    {
-        if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
-                var allText = rawFile.responseText;
-                alert(allText);
-            }
-        }
-    }
-    rawFile.send(null);
-}
-
-export default function DataTable() {
+export default function DataTable({ list, removedPeople }) {
     const stateDrawer = React.useState(false);
     const [state, setState] = stateDrawer;
     const [Content, setConent] = React.useState();
@@ -96,7 +71,6 @@ export default function DataTable() {
     const handleClick = (params) => {
         const { name } = params.row;
         if (name in people) {
-
             if (isValidElement(people[name][params.field]) || params.field === "name") {
                 setConent(people[name][params.field])
                 setState(true);
@@ -106,10 +80,14 @@ export default function DataTable() {
         }
     }
 
+    const students = _.orderBy(list, ['name'], ['desc']);
+
+    const filteredExample = _.differenceBy(students, removedPeople, 'name');
+
     return (
         <>
             <div style={{ height: '100vh', width: '100%' }}>
-                <DataGrid onCellClick={handleClick} rows={_.orderBy(list, ['name'], ['desc'])} columns={columns} pageSize={26} />
+                <DataGrid onCellClick={handleClick} rows={filteredExample} columns={columns} pageSize={26} />
             </div>
             {Content && <Drawer stateDrawer={stateDrawer} width="50vw">
                 {Content}

@@ -6,28 +6,26 @@ import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import list from "../../constants/common";
 
-function Lb7(props) {
-  const [value, setValue] = useState();
+function Lb7({ value, setValue, ...rest }) {
 
-  // const handleChange = (params, p) => {
-  //     console.log(params);
-  //     console.log(p);
-  // }
+  const handleChange = (params, item) => {
+    setValue(item.props.value)
+  }
 
   return (
-    <FormControl {...props}>
+    <FormControl {...rest}>
       <InputLabel id="demo-simple-select-helper-label">список</InputLabel>
       <Select
         labelId="demo-simple-select-helper-label"
         id="demo-simple-select-helper"
         value={value}
-        // onChange={handleChange}
+        onChange={handleChange}
       >
         {list.map((item) => {
           return <MenuItem value={item.name}>{item.name}</MenuItem>;
         })}
 
-        <MenuItem value={30}>Thirty</MenuItem>
+        
       </Select>
     </FormControl>
   );

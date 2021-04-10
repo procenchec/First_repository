@@ -1,8 +1,9 @@
 import Button from '@material-ui/core/Button';
 
-function App() {
+
+function App({ handleClick }) {
     return (
-        <Button variant="contained" color="primary">
+        <Button onClick={handleClick} variant="contained" color="primary">
             Tap
         </Button>
 
