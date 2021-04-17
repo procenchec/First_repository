@@ -85,10 +85,14 @@ export default function DataTable({ list, removedPeople }) {
 
     const filteredExample = _.differenceBy(students, removedPeople, 'name');
 
+    const paginationComponent = () => {
+        return <div></div>;
+    }
+
     return (
         <>
-            <div style={{ height: '100vh', width: '100%' }}>
-                <DataGrid onCellClick={handleClick} rows={filteredExample} columns={columns} pageSize={26} />
+            <div style={{ height: '1200px', width: '100%' }}>
+                <DataGrid components={{Footer: paginationComponent}} onCellClick={handleClick} rows={filteredExample} columns={columns} pageSize={40} />
             </div>
             {Content && <Drawer stateDrawer={stateDrawer} width="50vw">
                 {Content}
