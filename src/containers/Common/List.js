@@ -4,6 +4,7 @@ import Kosyrev from "../Kosyrev";
 import { Photo as Tarakanov } from "../Tarakanov";
 import Drawer from "../../components/Drawer";
 import Nikulin from "../Nikulin";
+import Finaev from "../Finaev";
 import Mironov from "../Mironov";
 import Artemyev from "../Artemyev";
 import BykovOvsepyan from "../BykovOvsepyan";
@@ -31,6 +32,7 @@ import { korneev as korneevName } from '../../constants/results';
 // import Protsenko from '../Protsenko'
 import tarakanoff from '../../constants/tarakanoff';
 import nikulin from "../../constants/nikulin";
+import finaev from "../../constants/finaev";
 
 const columns = [
     //{ field: 'id', headerName: 'ID', width: 70 },
@@ -51,6 +53,7 @@ const columns = [
 const people = {
     "Косырев": { name: Kosyrev, ...kosyrev },
     "Тараканов": { name: Tarakanov, ...tarakanoff },
+    "Финаев": { name: Finaev, ...finaev },
     "Никулин": { name: Nikulin, ...nikulin },
     "Миронов": { name: Mironov, ...mironov },
     "Овсепян": { name: BykovOvsepyan, ...ovs },

@@ -9,6 +9,7 @@ import Rozhkova from "./containers/Rozhkova";
 import Kamleva from "./containers/Kamleva";
 import Turov from "./containers/Turov";
 import Mironov from "./containers/Mironov";
+import Finaev from "./containers/Finaev";
 import Nikulin from "./containers/Nikulin";
 import Korneev from "./containers/Korneev";
 import Godonoga from "./containers/Godonoga";
@@ -61,6 +62,7 @@ function App() {
                         <Belyavskii></Belyavskii>
 
                         <Nikulin></Nikulin>
+                        <Finaev></Finaev>
                         <Godonoga></Godonoga>
                     </Route>
                 </Switch>
