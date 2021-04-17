@@ -18,6 +18,7 @@ import turovlab from './turov'
 import leonovalab from './leonova';
 
 
+
 let i = 0;
 
 export const gen = (name, email, labs) => {
@@ -86,5 +87,7 @@ const list = [gen('Камлёва', 'KamljovaNS@studklg.ru', kamlevaLabs),
     gen('Годонога', ''),
     gen('Туров', 'TurovSV@studklg.ru', turovlab),
     gen('Леонова', 'LeonovaVD@studklg.ru', leonovalab)];
+
+
 
 export default list

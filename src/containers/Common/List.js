@@ -32,6 +32,9 @@ import { korneev as korneevName } from '../../constants/results';
 // import Protsenko from '../Protsenko'
 import tarakanoff from '../../constants/tarakanoff';
 import nikulin from "../../constants/nikulin";
+import list from "../../constants/common";
+import render from '../Tarakanov3D/3DLogic';
+
 import finaev from "../../constants/finaev";
 
 const columns = [
@@ -52,8 +55,8 @@ const columns = [
 
 const people = {
     "Косырев": { name: Kosyrev, ...kosyrev },
-    "Тараканов": { name: Tarakanov, ...tarakanoff },
     "Финаев": { name: Finaev, ...finaev },
+    "Тараканов": { name: Tarakanov, ...tarakanoff, email: render },
     "Никулин": { name: Nikulin, ...nikulin },
     "Миронов": { name: Mironov, ...mironov },
     "Овсепян": { name: BykovOvsepyan, ...ovs },
@@ -65,7 +68,6 @@ const people = {
     "Туров": { name: Turov, ...turov },
     "Леонова": { name: Leonova, ...leonova }
 };
-
 export default function DataTable({ list, removedPeople }) {
     const stateDrawer = React.useState(false);
     const [state, setState] = stateDrawer;
@@ -74,12 +76,14 @@ export default function DataTable({ list, removedPeople }) {
 
     const handleClick = (params) => {
         const { name } = params.row;
+
         if (name in people) {
-            if (isValidElement(people[name][params.field]) || params.field === "name") {
+            if (isValidElement(people[name][params.field]) || params.field === "name" || params.field === "email")   {
                 setConent(people[name][params.field])
                 setState(true);
             }
-        } else {
+        }
+        else {
             window.open("/" + name);
         }
     }

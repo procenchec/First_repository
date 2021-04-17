@@ -1,5 +1,5 @@
 import "./App.css";
-import {useState} from "react";
+import { useState } from "react";
 import Sheglova from "./containers/Sheglova";
 import Procenko from "./containers/Protsenko";
 import Artemyev from "./containers/Artemyev";
@@ -26,25 +26,25 @@ import Header from "./components/Header";
 
 function App() {
     const [value, setValue] = useState();
-    const [removedPeople, setRemovedPeople] = useState([{name: 'Белявский'}]);
+    const [removedPeople, setRemovedPeople] = useState([{ name: 'Белявский' }]);
 
-
+    
     const [students, setStudents] = useState(list);
 
     return (
         <BrowserRouter>
             <div className="App">
-                <UrlKamleva/>
+                <UrlKamleva />
 
                 <Switch>
                     <Route path="/Камлёва">
-                        <Kamleva/>
+                        <Kamleva />
                     </Route>
                     <Route path="/Проценко">
-                        <Procenko/>
+                        <Procenko />
                     </Route>
                     <Route path="/Артемьев">
-                        <Artemyev/>
+                        <Artemyev />
                     </Route>
                     <Route path="/">
                         <Header removedaPeople={removedPeople} SetRemovedPeople={setRemovedPeople} SetValue={setValue} value={value}/>
