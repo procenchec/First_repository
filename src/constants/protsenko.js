@@ -6,14 +6,13 @@ import lab4 from "../assets/Protsenko/lab4.pdf";
 import lab5 from "../assets/Protsenko/lab5.pdf";
 import lab6 from "../assets/Protsenko/lab6.pdf";
 import lab7 from "../assets/Protsenko/lab7.pdf";
-import { cloneElement } from "react";
-import React from "react";
-export default {
-    l1: <Iframe src={lab1}></Iframe>,
-    l2: cloneElement(<Iframe></Iframe>, { src: lab2 }),
-    l3: cloneElement(<Iframe></Iframe>, { src: lab3 }),
-    l4: cloneElement(<Iframe></Iframe>, { src: lab4 }),
-    l5: cloneElement(<Iframe></Iframe>, { src: lab5 }),
-    l6: cloneElement(<Iframe></Iframe>, { src: lab6 }),
-    l7: cloneElement(<Iframe></Iframe>, { src: lab7 }),
-}
+import { LabsResult } from "../utils/generator";
+
+
+
+
+const array = [lab1, lab2, lab3, lab4, lab5, lab6, lab7, "+"];
+
+console.log(LabsResult(array))
+export default LabsResult(array);
+

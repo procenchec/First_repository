@@ -15,7 +15,7 @@ import { results, maxBall } from './results';
 import nikulin from "./nikulin";
 import turovlab from './turov'
 import leonovalab from './leonova';
-import { gridColumnsTotalWidthSelector } from '@material-ui/data-grid';
+
 
 let i = 0;
 
@@ -43,18 +43,25 @@ export const gen = (name, email, labs) => {
         //console.log(score);
     }
     
+    let bonus = 0;
     if (results[name])
     {
         if(results[name].bonus != undefined)
+        {
             score = score + (results[name].bonus)
+            bonus = results[name].bonus;
+        }
     }
+
+    
     for (var prop in newLabs) {
 
         if (isValidElement(newLabs[prop]))
             newLabs[prop] = "+";
     }
 
-    return {name, email, id: i, ...newLabs, score}
+    
+    return {name, email, id: i, ...newLabs, bonus, score}
 }
 
 
