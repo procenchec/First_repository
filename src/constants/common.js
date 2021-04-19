@@ -13,9 +13,12 @@ import rozhkovaLabs from './rozhkova';
 import tarLabs from './tarakanoff'
 import { results, maxBall } from './results';
 import nikulin from "./nikulin";
+import finaev from './finaev';
 import turovlab from './turov'
 import leonovalab from './leonova';
 import belyavskiilab from "./belyavskii";
+
+
 
 let i = 0;
 
@@ -30,25 +33,38 @@ export const gen = (name, email, labs) => {
         let currentLabScore = 0;
         if (results[name])
         {
-            currentLabScore = (results[name][lab] * maxBall) / 100;
+            //console.log(results[name][lab]);
+            if(results[name][lab] != undefined)
+                currentLabScore = (results[name][lab] * maxBall) / 100;
+            else
+            currentLabScore = 0;
         }
         // console.log(currentLabScore);
         // console.log(results[lab])
-        console.log(name, lab)
+        // console.log(name, lab)
         score = score + currentLabScore;
+        //console.log(score);
     }
     
+    let bonus = 0;
     if (results[name])
     {
-        score = score + (results[name].bonus)
+        if(results[name].bonus != undefined)
+        {
+            score = score + (results[name].bonus)
+            bonus = results[name].bonus;
+        }
     }
+
+    
     for (var prop in newLabs) {
 
         if (isValidElement(newLabs[prop]))
             newLabs[prop] = "+";
     }
 
-    return {name, email, id: i, ...newLabs, score}
+    
+    return {name, email, id: i, ...newLabs, bonus, score}
 }
 
 
@@ -64,6 +80,7 @@ const list = [gen('Камлёва', 'KamljovaNS@studklg.ru', kamlevaLabs),
     gen('Лобанов', '', lobanovLabs),
     gen('Щеглова', '', sheglovaLabs),
     gen('Никулин', 'NikulinVV@studklg.ru', nikulin),
+    gen('Финаев', 'finayevAS@studklg.ru', finaev),
     gen('Садулаев', ''),
     gen('Овсепян', 'OvsepyanAM@studklg.ru', OvsepyanLabs),
     gen('Быков', ''),
@@ -71,5 +88,7 @@ const list = [gen('Камлёва', 'KamljovaNS@studklg.ru', kamlevaLabs),
     gen('Годонога', ''),
     gen('Туров', 'TurovSV@studklg.ru', turovlab),
     gen('Леонова', 'LeonovaVD@studklg.ru', leonovalab)];
+
+
 
 export default list
