@@ -15,6 +15,7 @@ import { results, maxBall } from './results';
 import nikulin from "./nikulin";
 import turovlab from './turov'
 import leonovalab from './leonova';
+import belyavskiilab from "./belyavskii";
 
 let i = 0;
 
@@ -58,7 +59,7 @@ const list = [gen('Камлёва', 'KamljovaNS@studklg.ru', kamlevaLabs),
     gen('Проценко', 'procenchec@gmail.com', protsenko),
     gen('Рожкова', 'RozhkovaVAn@studklg.ru', rozhkovaLabs),
     gen('Тараканов', 'TarakanovNI@studklg.ru', tarLabs),
-    gen('Белявский', ''),
+    gen('Белявский', 'BelyavskijVV@studklg.ru', belyavskiilab),
     gen('Корнеев', '', korneevLabs),
     gen('Лобанов', '', lobanovLabs),
     gen('Щеглова', '', sheglovaLabs),

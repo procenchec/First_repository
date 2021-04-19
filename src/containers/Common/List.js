@@ -1,6 +1,6 @@
 import list from '../../constants/common';
-import { DataGrid } from '@material-ui/data-grid';
-import React from "react";
+import {DataGrid, GridCellParams} from '@material-ui/data-grid';
+import React, {ReactElement} from "react";
 import Kosyrev from "../Kosyrev";
 import { Photo as Tarakanov } from "../Tarakanov";
 import Drawer from "../../components/Drawer";
@@ -31,6 +31,8 @@ import { korneev as korneevName } from '../../constants/results';
 // import Protsenko from '../Protsenko'
 import tarakanoff from '../../constants/tarakanoff';
 import nikulin from "../../constants/nikulin";
+import belyavskii from "../../constants/belyavskii";
+import Belyavskii from "../Belyavskii"
 
 const columns = [
     //{ field: 'id', headerName: 'ID', width: 70 },
@@ -48,6 +50,7 @@ const columns = [
 ];
 
 const people = {
+    "Белявский":{name: Belyavskii,...belyavskii},
     "Косырев": {name: Kosyrev, ...kosyrev},
     "Тараканов": {name: Tarakanov, ...tarakanoff},
     "Никулин": {name: Nikulin, ...nikulin},
@@ -58,11 +61,6 @@ const people = {
     [artemyevName]: {name: Artemyev, ...artemyev},
     "Проценко": {name: Protsenko, ...protsenko},
     [korneevName]: {name: Korneev, ...korneev},
-
-
-
-
-    
     "Туров": {name: Turov, ...turov},
     "Леонова": {name: Leonova, ...leonova}
 };
@@ -85,7 +83,6 @@ export default function DataTable() {
             window.open("/" + name);
         }
     }
-
     return (
         <>
             <div style={{ height: '100vh', width: '100%' }}>
@@ -95,4 +92,15 @@ export default function DataTable() {
                 {Content}
             </Drawer>}
         </>)
-}
+    /**!//const columns: GridColumns =[
+        {
+            field: 'first',
+            headerClassName: 'super-app-theme--header',
+            headerAlign: 'center',
+        },
+        {
+            field: 'last',
+            headerClassName: 'super-app-theme--header',
+            headerAlign: 'center',
+        },
+    ];//!**/
