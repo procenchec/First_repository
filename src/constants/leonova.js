@@ -3,8 +3,8 @@ import lab1 from "../assets/leonova/1.pdf";
 import lab2 from "../assets/leonova/2.pdf";
 import lab3 from "../assets/leonova/3.pdf";
 import lab4 from "../assets/leonova/4.pdf";
-import lab5 from "../assets/leonova/4.pdf";
-import lab6 from "../assets/leonova/4.pdf";
+import lab5 from "../assets/leonova/5.pdf";
+import lab6 from "../assets/leonova/6.pdf";
 
 import React from "react";
 export default {
