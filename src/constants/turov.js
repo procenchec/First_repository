@@ -3,8 +3,8 @@ import lab1 from "../assets/Turov/1.pdf";
 import lab2 from "../assets/Turov/2.pdf";
 import lab3 from "../assets/Turov/3.pdf";
 import lab4 from "../assets/Turov/4.pdf";
-import lab5 from "../assets/Turov/4.pdf";
-import lab6 from "../assets/Turov/4.pdf";
+import lab5 from "../assets/Turov/5.pdf";
+import lab6 from "../assets/Turov/6.pdf";
 
 import React from "react";
 export default {
