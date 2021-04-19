@@ -39,10 +39,24 @@ import Belyavskii from "../Belyavskii"
 import render from '../Tarakanov3D/3DLogic';
 
 import finaev from "../../constants/finaev";
+import {colors} from "@material-ui/core";
+import styled from "styled-components";
+
+const renderCell = (params) => {
+    const score = params.row.score;
+    if (score < 60) {
+        return <Red>{params.value}</Red>;
+    } else
+    {
+        return <div>{params.value}</div>;
+    }
+}
+ const Red = styled.div`
+ color: rgb(255, 102, 0);`
 
 const columns = [
     //{ field: 'id', headerName: 'ID', width: 70 },
-    { field: 'name', headerName: 'Name', width: 130 },
+    { field: 'name', headerName: 'Name', width: 130, cellClassName: 'asadsad', renderCell },
     { field: 'email', headerName: 'Email', width: 130 },
     { field: 'l1', headerName: 'Laba 1', width: 130 },
     { field: 'l2', headerName: 'Laba 2', width: 130 },
