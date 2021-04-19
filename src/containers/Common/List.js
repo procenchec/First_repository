@@ -99,6 +99,7 @@ export default function DataTable({ list, removedPeople }) {
         return <div></div>;
     }
 
+
     return (
         <>
             <div style={{ height: '1200px', width: '100%' }}>
