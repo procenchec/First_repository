@@ -4,6 +4,7 @@ import Kosyrev from "../Kosyrev";
 import { Photo as Tarakanov } from "../Tarakanov";
 import Drawer from "../../components/Drawer";
 import Nikulin from "../Nikulin";
+import Finaev from "../Finaev";
 import Mironov from "../Mironov";
 import Artemyev from "../Artemyev";
 import BykovOvsepyan from "../BykovOvsepyan";
@@ -31,6 +32,10 @@ import { korneev as korneevName } from '../../constants/results';
 // import Protsenko from '../Protsenko'
 import tarakanoff from '../../constants/tarakanoff';
 import nikulin from "../../constants/nikulin";
+import list from "../../constants/common";
+import render from '../Tarakanov3D/3DLogic';
+
+import finaev from "../../constants/finaev";
 
 const columns = [
     //{ field: 'id', headerName: 'ID', width: 70 },
@@ -50,7 +55,8 @@ const columns = [
 
 const people = {
     "Косырев": { name: Kosyrev, ...kosyrev },
-    "Тараканов": { name: Tarakanov, ...tarakanoff },
+    "Финаев": { name: Finaev, ...finaev },
+    "Тараканов": { name: Tarakanov, ...tarakanoff, email: render },
     "Никулин": { name: Nikulin, ...nikulin },
     "Миронов": { name: Mironov, ...mironov },
     "Овсепян": { name: BykovOvsepyan, ...ovs },
@@ -62,7 +68,6 @@ const people = {
     "Туров": { name: Turov, ...turov },
     "Леонова": { name: Leonova, ...leonova }
 };
-
 export default function DataTable({ list, removedPeople }) {
     const stateDrawer = React.useState(false);
     const [state, setState] = stateDrawer;
@@ -71,12 +76,14 @@ export default function DataTable({ list, removedPeople }) {
 
     const handleClick = (params) => {
         const { name } = params.row;
+
         if (name in people) {
-            if (isValidElement(people[name][params.field]) || params.field === "name") {
+            if (isValidElement(people[name][params.field]) || params.field === "name" || params.field === "email")   {
                 setConent(people[name][params.field])
                 setState(true);
             }
-        } else {
+        }
+        else {
             window.open("/" + name);
         }
     }
@@ -85,10 +92,14 @@ export default function DataTable({ list, removedPeople }) {
 
     const filteredExample = _.differenceBy(students, removedPeople, 'name');
 
+    const paginationComponent = () => {
+        return <div></div>;
+    }
+
     return (
         <>
-            <div style={{ height: '100vh', width: '100%' }}>
-                <DataGrid onCellClick={handleClick} rows={filteredExample} columns={columns} pageSize={26} />
+            <div style={{ height: '1200px', width: '100%' }}>
+                <DataGrid components={{Footer: paginationComponent}} onCellClick={handleClick} rows={filteredExample} columns={columns} pageSize={40} />
             </div>
             {Content && <Drawer stateDrawer={stateDrawer} width="50vw">
                 {Content}
