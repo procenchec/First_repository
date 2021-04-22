@@ -38,8 +38,9 @@ import tarakanoff from '../../constants/tarakanoff';
 import nikulin from "../../constants/nikulin";
 import list from "../../constants/common";
 import render from '../Tarakanov3D/3DLogic';
-
 import finaev from "../../constants/finaev";
+import Kamleva from "../Kamleva";
+import kamleva from '../../constants/kamleva';
 
 const columns = [
     //{ field: 'id', headerName: 'ID', width: 70 },
@@ -72,7 +73,8 @@ const people = {
     "Туров": { name: Turov, ...turov },
     "Леонова": { name: Leonova, ...leonova },
     "Сонов": { name: Sonov, ...sonov },
-    "Садуллаев":{ name: Sadullaev, ...sadullaev}
+    "Садуллаев":{ name: Sadullaev, ...sadullaev},
+    "Камлёва": {name: Kamleva, ...kamleva}
 };
 export default function DataTable({ list, removedPeople }) {
     const stateDrawer = React.useState(false);

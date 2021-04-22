@@ -2,15 +2,18 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
-function Example() {
+function Example({ lab3 }) {
   const state = useState(0);
   const [count, setCount] = state;
 
   useEffect(() => {
-    if (count === 10) {
-      alert('10');
+    if (!lab3) {
+      if (count === 10) {
+        alert('10');
+      }
     }
-  }, [count]);
+
+  }, [lab3,count]);
 
   return (
     <div>
@@ -47,13 +50,18 @@ const Image = styled.img`
   pointer-events: none;
   
 `
-const App = () => (
-  <AppContainer>
-    <Image src={'https://i.imgur.com/Kxghvcb.gif'} />
+const App = ({ lab2, lab3 }) => {
+
+
+
+  return (
+    <AppContainer>
+      <Image src={'https://i.imgur.com/Kxghvcb.gif'} />
      Финаев А.С. Б-ИСиТ 41
-    <Example />
-  </AppContainer>
-)
+      {lab2 !== true && <Example lab3={lab3} />}
+    </AppContainer>
+  )
+}
 
 export default App;
 
