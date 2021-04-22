@@ -14,8 +14,11 @@ import rozhkovaLabs from './rozhkova';
 import tarLabs from './tarakanoff'
 import { results, maxBall } from './results';
 import nikulin from "./nikulin";
-import turovlab from './turov'
+import finaev from './finaev';
+import turovlab from './turov';
 import leonovalab from './leonova';
+import sadullaevlab from './sadullaev';
+
 
 
 let i = 0;
@@ -78,7 +81,8 @@ const list = [gen('Камлёва', 'KamljovaNS@studklg.ru', kamlevaLabs),
     gen('Лобанов', '', lobanovLabs),
     gen('Щеглова', '', sheglovaLabs),
     gen('Никулин', 'NikulinVV@studklg.ru', nikulin),
-    gen('Садулаев', ''),
+    gen('Финаев', 'finayevAS@studklg.ru', finaev),
+    gen('Садуллаев', 'SadullaevAU@studklg.ru', sadullaevlab),
     gen('Овсепян', 'OvsepyanAM@studklg.ru', OvsepyanLabs),
     gen('Быков', ''),
     gen('Микалюк', ''),
@@ -87,5 +91,7 @@ const list = [gen('Камлёва', 'KamljovaNS@studklg.ru', kamlevaLabs),
     gen('Туров', 'TurovSV@studklg.ru', turovlab),
     gen('Леонова', 'LeonovaVD@studklg.ru', leonovalab),
 ];
+
+
 
 export default list

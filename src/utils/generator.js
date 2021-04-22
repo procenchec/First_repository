@@ -5,7 +5,7 @@ import { cloneElement } from "react";
 export function LabsResult(array) {
     const result = {}
     for (var i in array) {
-        if (!array[i].indexOf('.pdf')) { result[`l${+i+1}`] = array[i] }
+        if (array[i].indexOf('.pdf') === -1) { result[`l${+i+1}`] = array[i] }
         else { 
             result[`l${+i+1}`] = cloneElement(<Iframe></Iframe>, { src: array[i] })
         }
