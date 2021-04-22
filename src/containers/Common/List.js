@@ -45,6 +45,7 @@ import Kamleva from "../Kamleva";
 import kamleva from '../../constants/kamleva';
 import { colors } from "@material-ui/core";
 import styled from "styled-components";
+import byk from "../../constants/byk";
 
 const renderCell = (params) => {
     const score = params.row.score;
@@ -73,6 +74,8 @@ const columns = [
     { field: 'score', headerName: 'Score', width: 130 }
 ];
 
+const Bykov = () => <BykovOvsepyan isBykov />
+
 const people = {
     "Косырев": { name: Kosyrev, ...kosyrev },
     "Финаев": { name: Finaev, ...finaev },
@@ -80,6 +83,7 @@ const people = {
     "Никулин": { name: Nikulin, ...nikulin },
     "Миронов": { name: Mironov, ...mironov },
     "Овсепян": { name: BykovOvsepyan, ...ovs },
+    "Быков": { name: Bykov, ...byk },
     "Щеглова": { name: Sheglova, ...sheglovAnna },
     "Рожкова": { name: Rozhkova, ...rozhkova },
     [artemyevName]: { name: Artemyev, ...artemyev },

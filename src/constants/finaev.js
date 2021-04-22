@@ -9,16 +9,16 @@ import { cloneElement } from "react";
 import React from "react";
 import Finaev from "../containers/Finaev";
 
-const L2 = () => <Finaev lab2={true} />
-const L3 = () => <Finaev lab3={true} />
+const L2 = () => <Finaev lab2={true} />;
+const L3 = () => <Finaev lab3={true} />;
 
 export default {
-    l1: <Iframe src={lr1}></Iframe>,
-    l2: cloneElement(<Iframe></Iframe>, { src: lr2, Lab: L2 }),
-    l3: cloneElement(<Iframe></Iframe>, { src: lr3, Lab: L3 }),
-    l4: cloneElement(<Iframe></Iframe>, { src: lr4, Lab: Finaev }),
-    l5: cloneElement(<Iframe></Iframe>, { src: lr5 }),
-    l6: cloneElement(<Iframe></Iframe>, { src: lr6 }),
-    l7: '+',
-    l8: '+',
-}
+  l1: <Iframe src={lr1}></Iframe>,
+  l2: cloneElement(<Iframe></Iframe>, { src: lr2, Lab: L2 }),
+  l3: cloneElement(<Iframe></Iframe>, { src: lr3, Lab: L3 }),
+  l4: cloneElement(<Iframe></Iframe>, { src: lr4, Lab: Finaev }),
+  l5: cloneElement(<Iframe></Iframe>, { src: lr5 }),
+  l6: cloneElement(<Iframe></Iframe>, { src: lr6 }),
+  l7: "+",
+  l8: "+",
+};
