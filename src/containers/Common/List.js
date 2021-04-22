@@ -1,6 +1,5 @@
-
-import {DataGrid, GridCellParams} from '@material-ui/data-grid';
-import React, {ReactElement} from "react";
+import { DataGrid } from '@material-ui/data-grid';
+import React from "react";
 import Kosyrev from "../Kosyrev";
 import { Photo as Tarakanov } from "../Tarakanov";
 import Drawer from "../../components/Drawer";
@@ -27,6 +26,8 @@ import turov from '../../constants/turov';
 import Turov from "../Turov";
 import leonova from '../../constants/leonova';
 import Leonova from "../Leonova";
+import sadullaev from '../../constants/sadullaev';
+import Sadullaev from "../Sadullaev";
 import { artemyev as artemyevName } from '../../constants/results';
 import { protsenko as protsenkoName } from '../../constants/results';
 import { korneev as korneevName } from '../../constants/results';
@@ -83,6 +84,7 @@ const people = {
     [protsenkoName]: { name: Protsenko, ...protsenko },
     [korneevName]: { name: Korneev, ...korneev },
     "Туров": { name: Turov, ...turov },
+    "Садуллаев":{ name: Sadullaev, ...sadullaev}
     "Леонова": { name: Leonova, ...leonova },
     "Белявский":{name: Belyavskii,...belyavskii}
 };
@@ -112,6 +114,7 @@ export default function DataTable({ list, removedPeople }) {
     const paginationComponent = () => {
         return <div></div>;
     }
+
 
     return (
         <>
