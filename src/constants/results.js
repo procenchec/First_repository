@@ -1,9 +1,8 @@
-
 import dataJson from '../db/db.json';
 
-export const korneev = "Корнеев";
 export const protsenko = "Проценко";
 export const artemyev = "Артемьев";
+export const korneev = "Корнеев";
 export const mironov = "Миронов";
 export const kosyrev = "Косырев";
 export const maxBall = 10;
