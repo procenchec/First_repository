@@ -84,7 +84,7 @@ const people = {
     [protsenkoName]: { name: Protsenko, ...protsenko },
     [korneevName]: { name: Korneev, ...korneev },
     "Туров": { name: Turov, ...turov },
-    "Садуллаев":{ name: Sadullaev, ...sadullaev}
+    "Садуллаев":{ name: Sadullaev, ...sadullaev},
     "Леонова": { name: Leonova, ...leonova },
     "Белявский":{name: Belyavskii,...belyavskii}
 };
