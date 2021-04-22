@@ -26,9 +26,9 @@ import Header from "./components/Header";
 
 function App() {
     const [value, setValue] = useState();
-    const [removedPeople, setRemovedPeople] = useState([{ name: 'Белявский' }]);
+    const [removedPeople, setRemovedPeople] = useState([{ name: 'Садуллаев' }]);
 
-    
+
     const [students, setStudents] = useState(list);
 
     return (
