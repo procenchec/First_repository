@@ -1,10 +1,10 @@
-import list from '../../constants/common';
 import { DataGrid } from '@material-ui/data-grid';
 import React from "react";
 import Kosyrev from "../Kosyrev";
 import { Photo as Tarakanov } from "../Tarakanov";
 import Drawer from "../../components/Drawer";
 import Nikulin from "../Nikulin";
+import Finaev from "../Finaev";
 import Mironov from "../Mironov";
 import Artemyev from "../Artemyev";
 import BykovOvsepyan from "../BykovOvsepyan";
@@ -26,13 +26,18 @@ import turov from '../../constants/turov';
 import Turov from "../Turov";
 import leonova from '../../constants/leonova';
 import Leonova from "../Leonova";
+import sadullaev from '../../constants/sadullaev';
+import Sadullaev from "../Sadullaev";
 import { artemyev as artemyevName } from '../../constants/results';
 import { protsenko as protsenkoName } from '../../constants/results';
 import { korneev as korneevName } from '../../constants/results';
 // import Protsenko from '../Protsenko'
 import tarakanoff from '../../constants/tarakanoff';
 import nikulin from "../../constants/nikulin";
-import { useEffect } from 'react';
+import list from "../../constants/common";
+import render from '../Tarakanov3D/3DLogic';
+
+import finaev from "../../constants/finaev";
 
 const columns = [
     //{ field: 'id', headerName: 'ID', width: 70 },
@@ -46,12 +51,14 @@ const columns = [
     { field: 'l6', headerName: 'Laba 6', width: 130 },
     { field: 'l7', headerName: 'Laba 7', width: 130 },
     { field: 'l8', headerName: 'Laba 8', width: 130 },
+    { field: 'bonus', headerName: 'Bonus', width: 130 },
     { field: 'score', headerName: 'Score', width: 130 }
 ];
 
 const people = {
     "Косырев": { name: Kosyrev, ...kosyrev },
-    "Тараканов": { name: Tarakanov, ...tarakanoff },
+    "Финаев": { name: Finaev, ...finaev },
+    "Тараканов": { name: Tarakanov, ...tarakanoff, email: render },
     "Никулин": { name: Nikulin, ...nikulin },
     "Миронов": { name: Mironov, ...mironov },
     "Овсепян": { name: BykovOvsepyan, ...ovs },
@@ -60,16 +67,11 @@ const people = {
     [artemyevName]: { name: Artemyev, ...artemyev },
     [protsenkoName]: { name: Protsenko, ...protsenko },
     [korneevName]: { name: Korneev, ...korneev },
-
-
-
-
-
     "Туров": { name: Turov, ...turov },
-    "Леонова": { name: Leonova, ...leonova }
+    "Леонова": { name: Leonova, ...leonova },
+    "Садуллаев":{ name: Sadullaev, ...sadullaev}
 };
-
-export default function DataTable() {
+export default function DataTable({ list, removedPeople }) {
     const stateDrawer = React.useState(false);
     const [state, setState] = stateDrawer;
     const [Content, setConent] = React.useState();
@@ -77,22 +79,31 @@ export default function DataTable() {
 
     const handleClick = (params) => {
         const { name } = params.row;
-        debugger
-        if (name in people) {
 
-            if (isValidElement(people[name][params.field]) || params.field === "name") {
+        if (name in people) {
+            if (isValidElement(people[name][params.field]) || params.field === "name" || params.field === "email")   {
                 setConent(people[name][params.field])
                 setState(true);
             }
-        } else {
+        }
+        else {
             window.open("/" + name);
         }
     }
 
+    const students = _.orderBy(list, ['name'], ['desc']);
+
+    const filteredExample = _.differenceBy(students, removedPeople, 'name');
+
+    const paginationComponent = () => {
+        return <div></div>;
+    }
+
+
     return (
         <>
-            <div style={{ height: '100vh', width: '100%' }}>
-                <DataGrid onCellClick={handleClick} rows={_.orderBy(list, ['name'], ['desc'])} columns={columns} pageSize={26} />
+            <div style={{ height: '1200px', width: '100%' }}>
+                <DataGrid components={{Footer: paginationComponent}} onCellClick={handleClick} rows={filteredExample} columns={columns} pageSize={40} />
             </div>
             {Content && <Drawer stateDrawer={stateDrawer} width="50vw">
                 {Content}

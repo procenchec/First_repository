@@ -19,6 +19,7 @@ import styled from "styled-components";
 
 export default App;
 
+
 function App() {
     return (
         <NiKulin>

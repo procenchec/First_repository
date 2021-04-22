@@ -13,8 +13,11 @@ import rozhkovaLabs from './rozhkova';
 import tarLabs from './tarakanoff'
 import { results, maxBall } from './results';
 import nikulin from "./nikulin";
-import turovlab from './turov'
+import finaev from './finaev';
+import turovlab from './turov';
 import leonovalab from './leonova';
+import sadullaevlab from './sadullaev';
+
 
 
 let i = 0;
@@ -43,18 +46,25 @@ export const gen = (name, email, labs) => {
         //console.log(score);
     }
     
+    let bonus = 0;
     if (results[name])
     {
         if(results[name].bonus != undefined)
+        {
             score = score + (results[name].bonus)
+            bonus = results[name].bonus;
+        }
     }
+
+    
     for (var prop in newLabs) {
 
         if (isValidElement(newLabs[prop]))
             newLabs[prop] = "+";
     }
 
-    return {name, email, id: i, ...newLabs, score}
+    
+    return {name, email, id: i, ...newLabs, bonus, score}
 }
 
 
@@ -70,12 +80,15 @@ const list = [gen('Камлёва', 'KamljovaNS@studklg.ru', kamlevaLabs),
     gen('Лобанов', '', lobanovLabs),
     gen('Щеглова', '', sheglovaLabs),
     gen('Никулин', 'NikulinVV@studklg.ru', nikulin),
-    gen('Садулаев', ''),
+    gen('Финаев', 'finayevAS@studklg.ru', finaev),
+    gen('Садуллаев', 'SadullaevAU@studklg.ru', sadullaevlab),
     gen('Овсепян', 'OvsepyanAM@studklg.ru', OvsepyanLabs),
     gen('Быков', ''),
     gen('Микалюк', ''),
     gen('Годонога', ''),
     gen('Туров', 'TurovSV@studklg.ru', turovlab),
     gen('Леонова', 'LeonovaVD@studklg.ru', leonovalab)];
+
+
 
 export default list

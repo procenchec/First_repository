@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState } from "react";
 import Sheglova from "./containers/Sheglova";
 import Procenko from "./containers/Protsenko";
 import Artemyev from "./containers/Artemyev";
@@ -8,79 +9,67 @@ import Rozhkova from "./containers/Rozhkova";
 import Kamleva from "./containers/Kamleva";
 import Turov from "./containers/Turov";
 import Mironov from "./containers/Mironov";
+import Finaev from "./containers/Finaev";
 import Nikulin from "./containers/Nikulin";
 import Korneev from "./containers/Korneev";
 import Godonoga from "./containers/Godonoga";
 import Mikalyuk from "./containers/Mikalyuk";
 import List from "./containers/Common/List";
 import UrlKamleva from "./containers/Kamleva/Url";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Lb7 from "./containers/Common/LB7";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
+import LB8 from "./containers/Common/LB8";
 import styled from "styled-components";
+import list from './constants/common';
+import imgo from "./assets/Ovsepyan/img.jpg";
+import Header from "./components/Header";
 
-const Input = styled(Lb7)`
-  
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  font-weight: 900;
-`;
-
-const Header = styled.div`
-    background-color: rgb(21, 150, 205);
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  font-weight: 900;
-  color: rgb(20, 19, 89);
-  min-height: 6vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-`;
 
 function App() {
-  return (
-    <BrowserRouter>
-      <div className="App">
-        <UrlKamleva />
-        <Switch>
-          <Route path="/Камлёва">
-            <Kamleva />
-          </Route>
-          <Route path="/Проценко">
-            <Procenko />
-          </Route>
-          <Route path="/Артемьев">
-            <Artemyev />
-          </Route>
-          <Route path="/">
-            <Header>
-              <Input />
-              <a href="https://protsenkoweb.herokuapp.com/">
-                https://protsenkoweb.herokuapp.com/
-              </a>
-            </Header>
+    const [value, setValue] = useState();
+    const [removedPeople, setRemovedPeople] = useState([{ name: 'Белявский' }]);
 
-            <List />
+    
+    const [students, setStudents] = useState(list);
 
-            <Lobanov></Lobanov>
-            <Rozhkova></Rozhkova>
+    return (
+        <BrowserRouter>
+            <div className="App">
+                <UrlKamleva />
 
-            <Turov></Turov>
-            <Korneev></Korneev>
-            <Mironov></Mironov>
-            <Mikalyuk></Mikalyuk>
+                <Switch>
+                    <Route path="/Камлёва">
+                        <Kamleva />
+                    </Route>
+                    <Route path="/Проценко">
+                        <Procenko />
+                    </Route>
+                    <Route path="/Артемьев">
+                        <Artemyev />
+                    </Route>
+                    <Route path="/">
+                        <Header removedaPeople={removedPeople} SetRemovedPeople={setRemovedPeople} SetValue={setValue} value={value}/>
 
-            <Belyavskii></Belyavskii>
+                        <List list={students} removedPeople={removedPeople}/>
 
-            <Nikulin></Nikulin>
-            <Godonoga></Godonoga>
-          </Route>
-        </Switch>
-      </div>
-    </BrowserRouter>
-  );
+                        <Lobanov></Lobanov>
+                        <Rozhkova></Rozhkova>
+
+                        <Turov></Turov>
+                        <Korneev></Korneev>
+                        <Mironov></Mironov>
+                        <Mikalyuk></Mikalyuk>
+
+                        <Belyavskii></Belyavskii>
+
+                        <Nikulin></Nikulin>
+                        <Finaev></Finaev>
+                        <Godonoga></Godonoga>
+                    </Route>
+                </Switch>
+            </div>
+        </BrowserRouter>
+
+    );
 }
 
 export default App;
