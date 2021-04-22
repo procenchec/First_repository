@@ -58,7 +58,7 @@ const people = {
     "Щеглова": { name: Sheglova, ...sheglovAnna },
     "Рожкова": { name: Rozhkova, ...rozhkova },
     [artemyevName]: { name: Artemyev, ...artemyev },
-    "Проценко": { name: Protsenko, ...protsenko },
+    [protsenkoName]: { name: Protsenko, ...protsenko },
     [korneevName]: { name: Korneev, ...korneev },
 
 
@@ -69,24 +69,6 @@ const people = {
     "Леонова": { name: Leonova, ...leonova }
 };
 
-function readTextFile(file)
-{
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function ()
-    {
-        if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
-                var allText = rawFile.responseText;
-                alert(allText);
-            }
-        }
-    }
-    rawFile.send(null);
-}
-
 export default function DataTable() {
     const stateDrawer = React.useState(false);
     const [state, setState] = stateDrawer;
@@ -95,6 +77,7 @@ export default function DataTable() {
 
     const handleClick = (params) => {
         const { name } = params.row;
+        debugger
         if (name in people) {
 
             if (isValidElement(people[name][params.field]) || params.field === "name") {
