@@ -7,6 +7,7 @@ import korneevLabs from '../constants/Korneev';
 import mironovlabs from './Mironov';
 import kosyrevLabs from './kosyrev';
 import OvsepyanLabs from './Ovsepyan';
+import SonovLabs from './sonov';
 import protsenko from "./protsenko"
 import {isValidElement} from 'react';
 import rozhkovaLabs from './rozhkova';
@@ -82,7 +83,9 @@ const list = [gen('Камлёва', 'KamljovaNS@studklg.ru', kamlevaLabs),
     gen('Быков', ''),
     gen('Микалюк', ''),
     gen('Годонога', ''),
+    gen('Сонов', '', SonovLabs), 
     gen('Туров', 'TurovSV@studklg.ru', turovlab),
-    gen('Леонова', 'LeonovaVD@studklg.ru', leonovalab)];
+    gen('Леонова', 'LeonovaVD@studklg.ru', leonovalab),
+];
 
 export default list

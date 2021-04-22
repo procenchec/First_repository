@@ -25,6 +25,8 @@ import turov from '../../constants/turov';
 import Turov from "../Turov";
 import leonova from '../../constants/leonova';
 import Leonova from "../Leonova";
+import Sonov from "../Sonov";
+import sonov from "../../constants/sonov"
 import { artemyev as artemyevName } from '../../constants/results';
 import { protsenko as protsenkoName } from '../../constants/results';
 import { korneev as korneevName } from '../../constants/results';
@@ -60,8 +62,9 @@ const people = {
     [protsenkoName]: { name: Protsenko, ...protsenko },
     [korneevName]: { name: Korneev, ...korneev },
     "Туров": { name: Turov, ...turov },
-    "Леонова": { name: Leonova, ...leonova }
-};
+    "Леонова": { name: Leonova, ...leonova },
+    "Сонов": { name: Sonov, ...sonov },
+}
 
 export default function DataTable({ list, removedPeople }) {
     const stateDrawer = React.useState(false);
