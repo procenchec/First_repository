@@ -18,6 +18,7 @@ import finaev from './finaev';
 import turovlab from './turov';
 import leonovalab from './leonova';
 import sadullaevlab from './sadullaev';
+import deryazhinlab from './deryazhin';
 
 
 
@@ -34,17 +35,12 @@ export const gen = (name, email, labs) => {
         let currentLabScore = 0;
         if (results[name])
         {
-            //console.log(results[name][lab]);
             if(results[name][lab] != undefined)
                 currentLabScore = (results[name][lab] * maxBall) / 100;
             else
             currentLabScore = 0;
         }
-        // console.log(currentLabScore);
-        // console.log(results[lab])
-        // console.log(name, lab)
         score = score + currentLabScore;
-        //console.log(score);
     }
     
     let bonus = 0;
@@ -85,6 +81,7 @@ const list = [gen('Камлёва', 'KamljovaNS@studklg.ru', kamlevaLabs),
     gen('Садуллаев', 'SadullaevAU@studklg.ru', sadullaevlab),
     gen('Овсепян', 'OvsepyanAM@studklg.ru', OvsepyanLabs),
     gen('Быков', ''),
+    gen('Деряжин', '' , deryazhinlab),
     gen('Микалюк', ''),
     gen('Годонога', ''),
     gen('Сонов', '', SonovLabs), 

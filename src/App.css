@@ -216,3 +216,13 @@
     align-items: center;
     flex-direction: column;
 }
+.Deryazhin {
+    background-color: rgb(154, 200, 221);
+    text-align: center;
+    color:rgb(96, 4, 150);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

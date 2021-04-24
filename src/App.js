@@ -13,6 +13,7 @@ import Finaev from "./containers/Finaev";
 import Nikulin from "./containers/Nikulin";
 import Korneev from "./containers/Korneev";
 import Godonoga from "./containers/Godonoga";
+import Deryazhin from "./containers/Deryazhin";
 import Mikalyuk from "./containers/Mikalyuk";
 import List from "./containers/Common/List";
 import UrlKamleva from "./containers/Kamleva/Url";
@@ -64,6 +65,7 @@ function App() {
                         <Nikulin></Nikulin>
                         <Finaev></Finaev>
                         <Godonoga></Godonoga>
+                        <Deryazhin></Deryazhin>
                     </Route>
                 </Switch>
             </div>
