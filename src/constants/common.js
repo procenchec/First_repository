@@ -19,6 +19,8 @@ import turovlab from './turov';
 import leonovalab from './leonova';
 import sadullaevlab from './sadullaev';
 import deryazhinlab from './deryazhin';
+import belyavskiilab from "./belyavskii";
+import byk from './byk';
 
 
 
@@ -72,7 +74,7 @@ const list = [gen('Камлёва', 'KamljovaNS@studklg.ru', kamlevaLabs),
     gen('Проценко', 'procenchec@gmail.com', protsenko),
     gen('Рожкова', 'RozhkovaVAn@studklg.ru', rozhkovaLabs),
     gen('Тараканов', 'TarakanovNI@studklg.ru', tarLabs),
-    gen('Белявский', ''),
+    gen('Белявский', 'BelyavskijVV@studklg.ru', belyavskiilab),
     gen('Корнеев', '', korneevLabs),
     gen('Лобанов', '', lobanovLabs),
     gen('Щеглова', '', sheglovaLabs),
@@ -80,8 +82,8 @@ const list = [gen('Камлёва', 'KamljovaNS@studklg.ru', kamlevaLabs),
     gen('Финаев', 'finayevAS@studklg.ru', finaev),
     gen('Садуллаев', 'SadullaevAU@studklg.ru', sadullaevlab),
     gen('Овсепян', 'OvsepyanAM@studklg.ru', OvsepyanLabs),
-    gen('Быков', ''),
     gen('Деряжин', '' , deryazhinlab),
+    gen('Быков', '', byk),
     gen('Микалюк', ''),
     gen('Годонога', ''),
     gen('Сонов', '', SonovLabs), 

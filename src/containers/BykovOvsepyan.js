@@ -3,11 +3,11 @@ import { useState } from "react";
 import styled from "styled-components";
 import "../App.css";
 
-function App() {
+function App({ isBykov }) {
   return (
     <OvsT>
       <OvsI src={"https://i.gifer.com/SZN1.gif"} />
-      Овсепян АМ Быков ЕИ Б-ИСиТ 41
+      {isBykov ? "Быков ЕИ Б-ИСит 41" : "Овсепян АМ Быков ЕИ Б-ИСиТ 41"}
       <Clicker />
     </OvsT>
   );

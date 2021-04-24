@@ -36,14 +36,31 @@ import { korneev as korneevName } from '../../constants/results';
 // import Protsenko from '../Protsenko'
 import tarakanoff from '../../constants/tarakanoff';
 import nikulin from "../../constants/nikulin";
-import list from "../../constants/common";
+import belyavskii from "../../constants/belyavskii";
+import Belyavskii from "../Belyavskii"
+/*import list from "../../constants/common";*/
 import render from '../Tarakanov3D/3DLogic';
-
 import finaev from "../../constants/finaev";
+import Kamleva from "../Kamleva";
+import kamleva from '../../constants/kamleva';
+import { colors } from "@material-ui/core";
+import styled from "styled-components";
+import byk from "../../constants/byk";
+
+const renderCell = (params) => {
+    const score = params.row.score;
+    if (score < 60) {
+        return <Red>{params.value}</Red>;
+    } else {
+        return <div>{params.value}</div>;
+    }
+}
+const Red = styled.div`
+ color: rgb(255, 102, 0);`
 
 const columns = [
     //{ field: 'id', headerName: 'ID', width: 70 },
-    { field: 'name', headerName: 'Name', width: 130 },
+    { field: 'name', headerName: 'Name', width: 130, cellClassName: 'asadsad', renderCell },
     { field: 'email', headerName: 'Email', width: 130 },
     { field: 'l1', headerName: 'Laba 1', width: 130 },
     { field: 'l2', headerName: 'Laba 2', width: 130 },
@@ -57,6 +74,8 @@ const columns = [
     { field: 'score', headerName: 'Score', width: 130 }
 ];
 
+const Bykov = () => <BykovOvsepyan isBykov />
+
 const people = {
     "Косырев": { name: Kosyrev, ...kosyrev },
     "Финаев": { name: Finaev, ...finaev },
@@ -64,6 +83,7 @@ const people = {
     "Никулин": { name: Nikulin, ...nikulin },
     "Миронов": { name: Mironov, ...mironov },
     "Овсепян": { name: BykovOvsepyan, ...ovs },
+    "Быков": { name: Bykov, ...byk },
     "Щеглова": { name: Sheglova, ...sheglovAnna },
     "Рожкова": { name: Rozhkova, ...rozhkova },
     [artemyevName]: { name: Artemyev, ...artemyev },
@@ -71,8 +91,10 @@ const people = {
     [korneevName]: { name: Korneev, ...korneev },
     "Туров": { name: Turov, ...turov },
     "Леонова": { name: Leonova, ...leonova },
+    "Белявский": { name: Belyavskii, ...belyavskii },
     "Сонов": { name: Sonov, ...sonov },
-    "Садуллаев":{ name: Sadullaev, ...sadullaev}
+    "Садуллаев": { name: Sadullaev, ...sadullaev },
+    "Камлёва": { name: Kamleva, ...kamleva }
 };
 export default function DataTable({ list, removedPeople }) {
     const stateDrawer = React.useState(false);
@@ -84,12 +106,11 @@ export default function DataTable({ list, removedPeople }) {
         const { name } = params.row;
 
         if (name in people) {
-            if (isValidElement(people[name][params.field]) || params.field === "name" || params.field === "email")   {
+            if (isValidElement(people[name][params.field]) || params.field === "name" || params.field === "email") {
                 setConent(people[name][params.field])
                 setState(true);
             }
-        }
-        else {
+        } else {
             window.open("/" + name);
         }
     }
@@ -106,10 +127,23 @@ export default function DataTable({ list, removedPeople }) {
     return (
         <>
             <div style={{ height: '1200px', width: '100%' }}>
-                <DataGrid components={{Footer: paginationComponent}} onCellClick={handleClick} rows={filteredExample} columns={columns} pageSize={40} />
+                <DataGrid components={{ Footer: paginationComponent }} onCellClick={handleClick} rows={filteredExample}
+                    columns={columns} pageSize={40} />
             </div>
             {Content && <Drawer stateDrawer={stateDrawer} width="50vw">
                 {Content}
             </Drawer>}
         </>)
 }
+    /**!//const columns: GridColumns =[
+    {
+        field: 'first',
+        headerClassName: 'super-app-theme--header',
+        headerAlign: 'center',
+    },
+    {
+        field: 'last',
+        headerClassName: 'super-app-theme--header',
+        headerAlign: 'center',
+    },
+];//!**/
