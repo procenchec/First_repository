@@ -7,6 +7,7 @@ import lab5 from "../assets/Belyavskii/lab5.pdf";
 import lab6 from "../assets/Belyavskii/lab6.pdf";
 import { cloneElement } from "react";
 import React from "react";
+
 export default {
     l1: <Iframe src={lab1}></Iframe>,
     l2: cloneElement(<Iframe></Iframe>, { src: lab2 }),
